@@ -33,7 +33,7 @@
     border-color: rgb(160, 88, 65);
 }
 
-#titulo{
+.titulo{
     font-size:5rem;
     padding-top: 10rem;
 }
@@ -42,6 +42,7 @@
     color: rgb(237, 237, 237);
     border-color: rgba(197, 197, 197, 0.897);
     background-color: rgb(160, 88, 65);
+    border-radius: 0.25rem;
 }
 .boton-marron:active, .boton-marron:focus{
     box-shadow: 0 0 0 0.25rem rgba(237, 237, 237, 0.5);
@@ -56,4 +57,25 @@
 }
 
 
+.fondo-gris{
+    background-color: rgb(237, 237, 237);
+}
+
+.fondo-verde{
+    background-color: rgb(18,49,50)
+}
+
+#enlaces li a{
+    color: white;
+    text-decoration: none;
+}
+#enlaces li a:hover{
+    text-decoration: underline;
+}
+
+
+#enlaces {
+    list-style-type: none;
+    padding:0rem 3rem;
+}
 

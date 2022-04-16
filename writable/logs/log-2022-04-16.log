@@ -1,0 +1,8 @@
+CRITICAL - 2022-04-16 15:39:40 --> file_get_contents(): read of 8192 bytes failed with errno=13 Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'file_get_conten...', 'C:\\xampp\\htdocs...', 464, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Debug\Toolbar.php(464): file_get_contents('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(308): CodeIgniter\Events\Events::trigger('pre_system')
+#5 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
