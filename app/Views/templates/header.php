@@ -23,10 +23,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Principal</a>
+                            <a class="nav-link" href="<?php echo base_url();?>">Principal</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quienes Somos</a>
+                            <a class="nav-link" href="<?php echo base_url();?>/quienes">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Comercialización</a>

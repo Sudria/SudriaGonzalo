@@ -6,3 +6,14 @@ CRITICAL - 2022-04-16 15:39:40 --> file_get_contents(): read of 8192 bytes faile
 #4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(308): CodeIgniter\Events\Events::trigger('pre_system')
 #5 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2022-04-16 17:40:51 --> Undefined variable: title
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\templates\header.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 51, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\MiControlador.php(9): view('templates/heade...')
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\MiControlador->index()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MiControlador))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
