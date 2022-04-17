@@ -25,19 +25,19 @@
                     <div class="carousel-item active" data-bs-interval="10000">
                         <img src="img/suculenta.jpg" class="d-block w-100 img-fluid rounded mx-auto" alt="suculenta">
                         <div class="carousel-caption d-none d-md-block">
-                            <button class="boton-marron">Ver mas</button>
+                            <button class="boton-marron p-1"> Ver mas </button>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
                         <img src="img/cactus.jpg" class="d-block w-100 img-fluid rounded mx-auto" alt="cactus">
                         <div class="carousel-caption d-none d-md-block">
-                            <button class="boton-marron">Ver mas</button>
+                            <button class="boton-marron p-1"> Ver mas </button>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/planta.jpg" class="d-block w-100 img-fluid rounded mx-auto" alt="planta">
                         <div class="carousel-caption d-none d-md-block">
-                            <button class="boton-marron">Ver mas</button>
+                            <button class="boton-marron p-1"> Ver mas</button>
                         </div>
                     </div>
                 </div>

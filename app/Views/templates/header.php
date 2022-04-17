@@ -31,10 +31,10 @@
                             <a class="nav-link" href="<?php echo base_url();?>/comercializacion">Comercialización</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url();?>/">Contacto</a>
+                            <a class="nav-link" href="<?php echo base_url();?>/contacto">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo base_url();?>/">Términos y usos</a>
+                            <a class="nav-link" href="<?php echo base_url();?>/terminos">Términos y usos</a>
                         </li>
                     </ul>
                     <form class="d-flex">

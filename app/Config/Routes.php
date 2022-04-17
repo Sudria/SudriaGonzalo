@@ -34,6 +34,8 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/sudriagonzalo/public/quienes', 'Home::quienes');
 $routes->get('/sudriagonzalo/public/comercializacion', 'Home::comercializacion');
+$routes->get('/sudriagonzalo/public/contacto', 'Home::contacto');
+$routes->get('/sudriagonzalo/public/terminos', 'Home::terminos');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
