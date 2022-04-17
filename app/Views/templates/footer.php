@@ -6,9 +6,9 @@
             <div class="col-4 text-light pt-5">
                 <h4>TIENDA</h4>
                 <p>
-                    Dirección: Av. Los Rosales 122, 28021 Madrid<br>
-                    Teléfono: 914-123-456<br>
-                    Email: info@misitio.com
+                    Dirección: Av. 3 de abril 1422, Corrientes<br>
+                    Teléfono: 3794-123-456<br>
+                    Email: espinnitas@gmail.com
                 </p>
             </div>
             <div class="col-4 text-light pt-5">
@@ -23,10 +23,10 @@
                 <h4> ENLACES</h4>
                 <ul id="enlaces">
                     <li><a href="#">Principal</a></li>
-                    <li><a href="#">Quienes Somos</a></li>
+                    <li><a href="#">Quiénes somos</a></li>
                     <li><a href="#">Comercialización</a></li>
                     <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Términos y Usos</a>
+                    <li><a href="#">Términos y usos</a>
                     </li>
                 </ul>
             </div>
