@@ -67,9 +67,11 @@
                 En la actualidad contamos con tres invernáculos donde producimos nuestras plantas.
             </p>
         </div>
-        <div class="col-6  p-0">
-            <img src="img/hoja.jpg" class="img-fluid p-0" alt="hoja">
-            <img src="img/cactus1.jpg" class="img-fluid p-0" alt="cactus">
+        <div class="col-3  p-0">
+            <img src="img/hoja.jpg" class="img-fluid w-100 p-0" alt="hoja">
+                </div>
+        <div class="col-3  p-0">
+            <img src="img/cactus1.jpg" class="img-fluid p-0 w-100" alt="cactus">
         </div>
     </div>
     <div class="row">
