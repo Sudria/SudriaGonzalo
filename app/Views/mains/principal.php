@@ -23,19 +23,19 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="img/suculenta.jpg" class="d-block w-100 img-fluid rounded mx-auto" alt="suculenta">
+                        <img src="img/principal/suculenta.jpg" class="d-block w-100 img-fluid rounded mx-auto" alt="suculenta">
                         <div class="carousel-caption d-none d-md-block">
                             <button class="boton-marron p-1"> Ver mas </button>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="img/cactus.jpg" class="d-block w-100 img-fluid rounded mx-auto" alt="cactus">
+                        <img src="img/principal/cactus.jpg" class="d-block w-100 img-fluid rounded mx-auto" alt="cactus">
                         <div class="carousel-caption d-none d-md-block">
                             <button class="boton-marron p-1"> Ver mas </button>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/planta.jpg" class="d-block w-100 img-fluid rounded mx-auto" alt="planta">
+                        <img src="img/principal/planta.jpg" class="d-block w-100 img-fluid rounded mx-auto" alt="planta">
                         <div class="carousel-caption d-none d-md-block">
                             <button class="boton-marron p-1"> Ver mas</button>
                         </div>
@@ -68,15 +68,15 @@
             </p>
         </div>
         <div class="col-3  p-0">
-            <img src="img/hoja.jpg" class="img-fluid w-100 p-0" alt="hoja">
+            <img src="img/principal/hoja.jpg" class="img-fluid w-100 p-0" alt="hoja">
                 </div>
         <div class="col-3  p-0">
-            <img src="img/cactus1.jpg" class="img-fluid p-0 w-100" alt="cactus">
+            <img src="img/principal/cactus1.jpg" class="img-fluid p-0 w-100" alt="cactus">
         </div>
     </div>
     <div class="row">
         <div class="col p-0">
-            <img src="img/inicio1.jpg" class="img-fluid ocupar-todo" alt="imagen">
+            <img src="img/principal/inicio1.jpg" class="img-fluid ocupar-todo" alt="imagen">
         </div>
         <div class="col fondo-verde d-flex align-items-center p-0">
             <p class="text-light text-center ">

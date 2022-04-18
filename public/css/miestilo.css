@@ -1,87 +1,113 @@
-*{
-    padding: 0px;
-    margin: 0px;
-}
-
-#principal{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../img/fondo.jpg");
+#principal {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../img/principal/fondo.jpg");
     background-size: cover;
     height: 40rem;
 }
-#navbar{
+
+#navbar {
     background-color: rgb(237, 237, 237);
 }
-.navbar-brand{
-    font-weight: bold;}
 
-.texto-base,.texto-base .navbar-nav .nav-link {
+.navbar-brand {
+    font-weight: bold;
+}
+
+.texto-base, .texto-base .navbar-nav .nav-link {
     color: rgb(160, 88, 65);
     text-align: center;
 }
- .texto-base .navbar-nav .nav-link:hover {
+
+.texto-base .navbar-nav .nav-link:hover {
     color: rgb(237, 237, 237);
-    background-color:rgb(160, 88, 65);
+    background-color: rgb(160, 88, 65);
 }
-.boton-gris, #input-buscar{
+
+.boton-gris, #input-buscar {
     color: rgb(160, 88, 65);
     border-color: rgb(160, 88, 65);
     background-color: rgb(237, 237, 237);
 }
-.boton-gris:active, .boton-gris:focus,#input-buscar:focus,#input-buscar:active{
+
+.boton-gris:active, .boton-gris:focus, #input-buscar:focus, #input-buscar:active {
     box-shadow: 0 0 0 0.25rem rgba(160, 88, 65, 0.5);
 }
-.boton-gris:hover{
+
+.boton-gris:hover {
     color: #fff;
     background-color: rgb(160, 88, 65);
     border-color: rgb(160, 88, 65);
 }
 
-.titulo{
-    font-size:5rem;
+.titulo {
+    font-size: 5rem;
     padding-top: 10rem;
 }
 
-.boton-marron{
+.boton-marron {
     color: rgb(237, 237, 237);
     border-color: rgba(197, 197, 197, 0.897);
     background-color: rgb(160, 88, 65);
     border-radius: 0.25rem;
 }
-.boton-marron:active, .boton-marron:focus{
+
+.boton-marron:active, .boton-marron:focus {
     box-shadow: 0 0 0 0.25rem rgba(237, 237, 237, 0.5);
 }
-.boton-marron:hover{
+
+.boton-marron:hover {
     color: #fff;
     background-color: rgb(160, 88, 65);
     border-color: rgb(160, 88, 65);
 }
-#especialistas{
-    font-size:1.5rem
+
+#especialistas {
+    font-size: 1.5rem
 }
 
 
-.fondo-gris{
+.fondo-gris {
     background-color: rgb(237, 237, 237);
 }
 
-.fondo-verde{
-    background-color: rgb(18,49,50)
+.fondo-verde {
+    background-color: rgb(18, 49, 50)
 }
 
-#enlaces li a{
+#enlaces li a {
     color: white;
     text-decoration: none;
 }
-#enlaces li a:hover{
+
+#enlaces li a:hover {
     text-decoration: underline;
 }
 
-
 #enlaces {
     list-style-type: none;
-    padding:0rem 3rem;
+    padding: 0rem 3rem;
 }
 
-.border{
-    border: 0.25rem solid rgb(18,49,50) !important;
+.border {
+    border: 0.25rem solid rgb(18, 49, 50) !important;
+}
+
+#retiro ul, #formulario label  {
+    color: rgb(18, 49, 50);
+}
+
+#formulario {
+    background-image: linear-gradient(rgba(218, 216, 216, 0.774), rgba(0, 0, 0, 0)), url("../img/principal/inicio2.jpg");
+    background-size: cover;
+    height: 37rem;
+}
+
+#formulario .form-control:focus {
+    border-color:rgba(160, 88, 65, 0.5) ;
+    box-shadow: 0 0 0 0.25rem rgba(160, 88, 65, 0.5);
+}
+
+#info{
+list-style-type: none;
+color: white;
+padding: 2rem
 }
