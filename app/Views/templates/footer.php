@@ -22,11 +22,11 @@
             <div class="col-sm-12 col-md-4 col-lg-4 text-light pt-5">
              
                 <ul id="enlaces">   <h4> ENLACES</h4>
-                    <li><a href="#">Principal</a></li>
-                    <li><a href="#">Quiénes somos</a></li>
-                    <li><a href="#">Comercialización</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Términos y usos</a>
+                    <li><a href="<?php echo base_url();?>">Principal</a></li>
+                    <li><a href="<?php echo base_url();?>/quienes">Quiénes somos</a></li>
+                    <li><a href="<?php echo base_url();?>/comercializacion">Comercialización</a></li>
+                    <li><a href="<?php echo base_url();?>/contacto">Contacto</a></li>
+                    <li><a href="<?php echo base_url();?>/terminos">Términos y usos</a>
                     </li>
                 </ul>
             </div>
