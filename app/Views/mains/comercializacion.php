@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="row fondo-gris p-5" id="retiro">
-        <div class="col-4">
+        <div class="col-sm-7 col-md-4 col-lg-4 my-3">
             <ul> Si retira en Correo Argentino:
                 <li> Su DNI</li>
                 <li> Una fotocopia del DNI de la persona designada</li>
@@ -36,7 +36,7 @@
                 <li> El formulario de autorización completo</li>
             </ul>
         </div>
-        <div class="col-4">
+        <div class="col-sm-7 col-md-4 col-lg-4 my-3">
             <ul>Si retira en OCA:
                 <li>Su DNI</li>
                 <li> Una fotocopia del DNI de la persona designada</li>
@@ -44,7 +44,7 @@
                 <li>Una carta de autorización escrita a mano por el responsable</li>
             </ul>
         </div>
-        <div class="col-4">
+        <div class="col-sm-7 col-md-4 col-lg-4 my-3">
             <ul> Si retira en otro punto de entrega:
                 <li> Su DNI</li>
                 <li> Una fotocopia del DNI del responsable del retiro</li>

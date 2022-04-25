@@ -42,15 +42,9 @@
             </div>
         </div>
         <div class="row p-5">
-            <div class="col-6 p-0">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.7757465140744!2d-58.835791084943!3d-27.476240082888133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456c9ec1b4d9ab%3A0x35c299fea673064a!2sAv.%203%20de%20Abril%201422%2C%20Corrientes!5e0!3m2!1ses-419!2sar!4v1650312566509!5m2!1ses-419!2sar"
-                     class="img-fluid w-100 p" style="height:17rem;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="col-6 p-0 fondo-verde">
+            <div class="col-sm-12 col-md-12 col-lg-6 p-0 fondo-verde">
                 <p>
-                    <ul id="info" >Informacion relevante:
+                    <ul id="info" >
                         <li>Nombre de la empresa: Espinnitas</li>
                         <li>Titular: Sudria Gonzalo</li>
                         <li>Razon social: Responsable Monotributista</li>
@@ -59,6 +53,12 @@
                         <li>Correo: espinnitas@gmail.com</li>
                     </ul>
                 </p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 p-0">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.7757465140744!2d-58.835791084943!3d-27.476240082888133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456c9ec1b4d9ab%3A0x35c299fea673064a!2sAv.%203%20de%20Abril%201422%2C%20Corrientes!5e0!3m2!1ses-419!2sar!4v1650312566509!5m2!1ses-419!2sar"
+                     class="img-fluid w-100 p" style="height:17rem;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
         </div>

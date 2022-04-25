@@ -106,6 +106,14 @@
     box-shadow: 0 0 0 0.25rem rgba(160, 88, 65, 0.5);
 }
 
+#formulario .form-control:hover {
+    box-shadow: 0 0 0 0.25rem rgba(160, 88, 65, 0.5);
+}
+
+#formulario .form-control {
+    border-color: rgba(160, 88, 65, 0.5);
+}
+
 #info {
     list-style-type: none;
     color: white;
@@ -123,3 +131,11 @@
     text-align: justify;
 }
 
+.borde-marron{
+    border-color: rgba(160, 88, 65, 0.5);
+
+}
+
+#descuento{
+    font-size: calc(3rem + 1.5vw)!important;
+}

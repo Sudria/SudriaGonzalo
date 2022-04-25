@@ -37,11 +37,12 @@
                             <a class="nav-link" href="<?php echo base_url();?>/terminos">Términos y usos</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
+                   <!-- <form class="d-flex">
                         <input class="form-control me-2" id="input-buscar" type="search" placeholder="Buscar"
                             aria-label="Buscar">
                         <button class="btn boton-gris" type="submit">Buscar</button>
                     </form>
+-->
                 </div>
             </div>
         </nav>

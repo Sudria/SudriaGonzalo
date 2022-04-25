@@ -3,7 +3,7 @@
 <footer>
     <div class="container mt-3 fondo-verde">
         <div class="row text-center justify-content-center">
-            <div class="col-4 text-light pt-5">
+            <div class="col-sm-12 col-md-4 col-lg-4 text-light pt-5">
                 <h4>TIENDA</h4>
                 <p>
                     Dirección: Av. 3 de abril 1422, Corrientes<br>
@@ -11,7 +11,7 @@
                     Email: espinnitas@gmail.com
                 </p>
             </div>
-            <div class="col-4 text-light pt-5">
+            <div class="col-sm-12 col-md-4 col-lg-4 text-light pt-5">
                 <h4> HORARIOS</h4>
                 <p>
                     Lun-Vie: 7:00 - 22:00<br>
@@ -19,9 +19,9 @@
                     Domingos: 8:00 - 23:00
                 </p>
             </div>
-            <div class="col-4 text-light pt-5">
-                <h4> ENLACES</h4>
-                <ul id="enlaces">
+            <div class="col-sm-12 col-md-4 col-lg-4 text-light pt-5">
+             
+                <ul id="enlaces">   <h4> ENLACES</h4>
                     <li><a href="#">Principal</a></li>
                     <li><a href="#">Quiénes somos</a></li>
                     <li><a href="#">Comercialización</a></li>

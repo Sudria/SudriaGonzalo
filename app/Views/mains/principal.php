@@ -9,79 +9,66 @@
         </div>
     </div>
 </div>
-<div class="container fondo-gris">
-    <div class="row  justify-content-center">
-        <div class="col-4">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="img/principal/suculenta.jpg" class="d-block w-100 img-fluid rounded mx-auto" alt="suculenta">
-                        <div class="carousel-caption d-none d-md-block">
-                            <button class="boton-marron p-1"> Ver mas </button>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="img/principal/cactus.jpg" class="d-block w-100 img-fluid rounded mx-auto" alt="cactus">
-                        <div class="carousel-caption d-none d-md-block">
-                            <button class="boton-marron p-1"> Ver mas </button>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/principal/planta.jpg" class="d-block w-100 img-fluid rounded mx-auto" alt="planta">
-                        <div class="carousel-caption d-none d-md-block">
-                            <button class="boton-marron p-1"> Ver mas</button>
-                        </div>
+
+
+        <div class="container fondo-gris">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-4">
+                    <div class="card my-5 borde-marron">
+                        <h5 class="py-5 text-center texto-base fs-4">Suculentas</h5>
+                        <img src="img/principal/suculenta.jpg" class="card-img-top " alt="suculenta">
+                        <button class ="boton-marron ">Ver mas</button>
+                      
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
+                <div class="col-4">
+                    <div class="card my-5 borde-marron">
+                        <h5 class="py-5 text-center texto-base fs-4">Cactus</h5>
+                        <img src="img/principal/cactus.jpg" class="card-img-top" alt="cactus">
+                        <button class =" boton-marron">Ver mas</button>
+                      
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card my-5 borde-marron">
+                        <h5 class="py-5 text-center texto-base fs-4">Plantas</h5>
+                        <img src="img/principal/planta.jpg" class="card-img-top" alt="planta">
+                        <button class =" boton-marron">Ver mas</button>
+                      
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
-</div>
-<div class="container fondo-gris">
-    <div class="row">
-        <div class="col-6 d-flex align-items-center ">
-            <p class="texto-base text-center">
-                <b class="fs-1"> QUIÉNES SOMOS</b> <br>
-                ESPINNITAS nace hace más de 10 años en la Ciudad de Corrientes Capital, Argentina.
-                Desde ese momento nos dedicamos al cultivo y asesoramiento profesional en Cactus, Suculentas y
-                Plantas
-                Exóticas.
-                En la actualidad contamos con tres invernáculos donde producimos nuestras plantas.
-            </p>
-        </div>
-        <div class="col-3  p-0">
-            <img src="img/principal/hoja.jpg" class="img-fluid w-100 p-0" alt="hoja">
+
+
+        <div class="container fondo-gris">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center ">
+                    <p class="texto-base text-center">
+                        <b class="fs-1"> QUIÉNES SOMOS</b> <br>
+                        ESPINNITAS nace hace más de 10 años en la Ciudad de Corrientes Capital, Argentina.
+                        Desde ese momento nos dedicamos al cultivo y asesoramiento profesional en Cactus, Suculentas y
+                        Plantas
+                        Exóticas.
+                        En la actualidad contamos con tres invernáculos donde producimos nuestras plantas.
+                    </p>
                 </div>
-        <div class="col-3  p-0">
-            <img src="img/principal/cactus1.jpg" class="img-fluid p-0 w-100" alt="cactus">
+                <div class="col-sm-6 col-md-3 col-lg-3  p-0">
+                    <img src="img/principal/hoja.jpg" class="img-fluid w-100 p-0" alt="hoja">
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3  p-0">
+                    <img src="img/principal/cactus1.jpg" class="img-fluid p-0 w-100" alt="cactus">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 p-0">
+                    <img src="img/principal/inicio1.jpg" class="img-fluid " alt="imagen">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 fondo-verde d-flex align-items-center p-0">
+                    <p class="text-light text-center fw-bold " id="descuento">
+                       -10% EN COMPRAS ONLINE
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col p-0">
-            <img src="img/principal/inicio1.jpg" class="img-fluid ocupar-todo" alt="imagen">
-        </div>
-        <div class="col fondo-verde d-flex align-items-center p-0">
-            <p class="text-light text-center ">
-                <b class="titulo">-10% EN COMPRAS ONLINE</b>
-            </p>
-        </div>
-    </div>
-</div>
