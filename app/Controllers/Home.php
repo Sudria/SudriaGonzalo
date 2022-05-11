@@ -35,4 +35,12 @@ class Home extends BaseController
         echo view('mains/terminos');
         echo view('templates/footer');
     }
+    public function crear_usuario()
+    {
+        echo view('templates/header');
+        echo view('mains/crear_usuario');
+        echo view('templates/footer');
+    }
+
+    
 }

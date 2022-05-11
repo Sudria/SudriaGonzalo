@@ -63,7 +63,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-6 p-0">
-                    <img src="img/principal/inicio1.jpg" class="img-fluid " alt="imagen">
+                    <img src="img/principal/inicio1.jpg" class="img-fluid w-100" alt="imagen">
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 fondo-verde d-flex align-items-center p-0">
                     <p class="text-light text-center fw-bold " id="descuento">

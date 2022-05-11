@@ -36,6 +36,7 @@ $routes->get('/sudriagonzalo/public/quienes', 'Home::quienes');
 $routes->get('/sudriagonzalo/public/comercializacion', 'Home::comercializacion');
 $routes->get('/sudriagonzalo/public/contacto', 'Home::contacto');
 $routes->get('/sudriagonzalo/public/terminos', 'Home::terminos');
+$routes->get('/sudriagonzalo/public/crear_usuario', 'Home::crear_usuario');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
