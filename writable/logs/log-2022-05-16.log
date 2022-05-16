@@ -1,0 +1,190 @@
+CRITICAL - 2022-05-16 05:06:30 --> Undefined variable: datos
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\crear_usuario.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_usu...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(48): view('mains/crear_usu...')
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_usuario()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 05:06:46 --> Undefined variable: datos
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\crear_usuario.php(2): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 2, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_usu...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(48): view('mains/crear_usu...')
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_usuario()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 05:12:09 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 52, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_usuario()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 05:18:12 --> Undefined variable: datos
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\crear_usuario.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_usu...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(48): view('mains/crear_usu...')
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_usuario()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 05:18:34 --> Undefined variable: datos
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\crear_usuario.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_usu...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(44): view('mains/crear_usu...')
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_usuario()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 05:19:17 --> Undefined variable: datos
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\crear_usuario.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_usu...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(48): view('mains/crear_usu...')
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_usuario()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 05:19:55 --> Undefined variable: data
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\crear_usuario.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_usu...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(48): view('mains/crear_usu...')
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_usuario()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 05:19:56 --> Undefined variable: data
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\crear_usuario.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_usu...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(48): view('mains/crear_usu...')
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_usuario()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 05:19:56 --> Undefined variable: data
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\crear_usuario.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_usu...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(48): view('mains/crear_usu...')
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_usuario()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 05:19:56 --> Undefined variable: data
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\crear_usuario.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_usu...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(48): view('mains/crear_usu...')
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_usuario()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 05:19:56 --> Undefined variable: data
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\crear_usuario.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_usu...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(48): view('mains/crear_usu...')
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_usuario()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 05:19:57 --> Undefined variable: data
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\crear_usuario.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_usu...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(48): view('mains/crear_usu...')
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_usuario()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 05:19:57 --> Undefined variable: data
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\crear_usuario.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_usu...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(48): view('mains/crear_usu...')
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_usuario()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 05:19:57 --> Undefined variable: data
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\crear_usuario.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 3, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_usu...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(48): view('mains/crear_usu...')
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_usuario()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-16 05:28:14 --> Undefined index: nombre
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 05:31:23 --> Undefined index: 
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 62, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-16 05:31:42 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(64): CodeIgniter\Model->__call('insertar', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-16 05:37:19 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(64): CodeIgniter\Model->__call('insertar', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-16 05:38:15 --> Undefined variable: data
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Models\UsuarioModel.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 16, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(64): App\Models\UsuarioModel->create(Array)
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
