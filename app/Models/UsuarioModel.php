@@ -16,9 +16,7 @@ class UsuarioModel extends Model{
     }
    
 
-    public function modificate(){
-
+    public function deleteForId($id){
+           return $this->db->query("DELETE FROM `usuarios` WHERE `usuarios`.`id` = $id"); 
+        }
     }
-   // public function delete(){ }
-
-}

@@ -1,10 +1,8 @@
-
-
-<form method="POST" action="<?php echo base_url().'/crear'; ?>">
+<form method="POST" action="<?php echo base_url().'/actualizar'; ?>">
     <div class="container p-5" id="crear">
         <div class="row ">
             <div class="col-12">
-                <h1 class="text-center mt-5 texto-base"> CREAR USUARIO NUEVO</h1>
+                <h2 class="text-center mt-5 texto-base"> MODIFICAR USUARIO </h2>
             </div>
         </div>
         <div class="row mt-5">
@@ -60,7 +58,7 @@
 
         <div class="row justify-content-center">
             <div class="col-1">
-                <button type="submit" class="btn boton-marron mt-5">Crear</button>
+                <button type="submit" class="btn boton-marron mt-5">Actualizar</button>
             </div>
         </div>
     </div>

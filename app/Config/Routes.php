@@ -37,8 +37,14 @@ $routes->get('/sudriagonzalo/public/comercializacion', 'Home::comercializacion')
 $routes->get('/sudriagonzalo/public/contacto', 'Home::contacto');
 $routes->get('/sudriagonzalo/public/terminos', 'Home::terminos');
 $routes->get('/sudriagonzalo/public/crear_usuario', 'Home::crear_usuario');
+$routes->get('/sudriagonzalo/public/lista_usuarios', 'Home::lista_usuarios');
+$routes->get('/sudriagonzalo/public/editar_usuario', 'Home::actualizar');
 
-$routes->post('/sudriagonzalo/public/crear', 'Home::crear');
+
+//methods rest api
+$routes->post('/sudriagonzalo/public/crear', 'UsuarioController::crear');
+$routes->get('/sudriagonzalo/public/eliminar/(:any)', 'UsuarioController::eliminar/$1');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
