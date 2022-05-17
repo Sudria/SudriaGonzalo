@@ -37,6 +37,9 @@
                             <a class="nav-link" href="<?php echo base_url();?>/terminos">Términos y usos</a>
                         </li>
                     </ul>
+
+                       <a class="btn boton-gris" href="<?php echo base_url();?>/crear_usuario" >Registrarse</a>
+                       <a class="btn boton-gris mx-2" href="<?php // echo base_url();?>/" >Iniciar Sesion</a>
                    <!-- <form class="d-flex">
                         <input class="form-control me-2" id="input-buscar" type="search" placeholder="Buscar"
                             aria-label="Buscar">

@@ -15,7 +15,7 @@ class UsuarioController extends BaseController
         "usuario" => $_POST['usuario'],
         "dni" => $_POST['dni'],
         "contraseña" => $_POST['contraseña']
-            ];
+        ];
     $crud = new UsuarioModel();
     $respuesta = $crud->create($datos);
 

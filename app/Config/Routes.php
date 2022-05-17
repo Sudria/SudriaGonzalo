@@ -37,7 +37,7 @@ $routes->get('/sudriagonzalo/public/comercializacion', 'Home::comercializacion')
 $routes->get('/sudriagonzalo/public/contacto', 'Home::contacto');
 $routes->get('/sudriagonzalo/public/terminos', 'Home::terminos');
 $routes->get('/sudriagonzalo/public/crear_usuario', 'Home::crear_usuario');
-$routes->get('/sudriagonzalo/public/lista_usuarios', 'Home::lista_usuarios');
+$routes->get('/sudriagonzalo/public/tabla_usuarios', 'Home::lista_usuarios');
 $routes->get('/sudriagonzalo/public/editar_usuario', 'Home::actualizar');
 
 

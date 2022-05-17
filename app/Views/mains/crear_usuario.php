@@ -4,7 +4,7 @@
     <div class="container p-5" id="crear">
         <div class="row ">
             <div class="col-12">
-                <h1 class="text-center mt-5 texto-base"> CREAR USUARIO NUEVO</h1>
+                <h1 class="text-center mt-5 texto-base">REGISTRARME</h1>
             </div>
         </div>
         <div class="row mt-5">
@@ -60,7 +60,7 @@
 
         <div class="row justify-content-center">
             <div class="col-1">
-                <button type="submit" class="btn boton-marron mt-5">Crear</button>
+                <button class="btn boton-marron mt-5">Crear</button>
             </div>
         </div>
     </div>
