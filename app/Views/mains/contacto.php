@@ -25,12 +25,14 @@
                     <input type="text" class="form-control" id="telefono">
                 </div>
             </div>
-            <div class="row ">
+            <div class="row">
                 <div class="mb-3 col-12">
                     <label for="mensaje" class="form-label">Mensaje</label>
                     <textarea class="form-control" id="mensaje"> </textarea>
                 </div>
-                <button type="submit" class="btn boton-marron ">Enviar</button>
+                <div class="col-3">
+                  <button type="submit" class="btn boton-marron ">Enviar</button>
+                </div>
             </div>
         </div>
     </form>

@@ -31,10 +31,16 @@ public function eliminar($id){
     $respuesta = $crud->deleteForId($id);
 
     if ($respuesta) {
-        return redirect()->to(base_url().'/lista_usuarios')->with('mensaje','4');
+        return redirect()->to(base_url().'/tabla_usuarios')->with('mensaje','4');
     } else {
-        return redirect()->to(base_url().'/lista_usuarios')->with('mensaje','5');
+        return redirect()->to(base_url().'/tabla_usuarios')->with('mensaje','5');
     }
+}
+public function modificar($id){
+    $crud = new UsuarioModel();
+    $datos = $crud->readForId($id);
+    $respuesta = $crud->update($datos);
+
 }
 
 

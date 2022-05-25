@@ -39,11 +39,13 @@ $routes->get('/sudriagonzalo/public/terminos', 'Home::terminos');
 $routes->get('/sudriagonzalo/public/crear_usuario', 'Home::crear_usuario');
 $routes->get('/sudriagonzalo/public/tabla_usuarios', 'Home::lista_usuarios');
 $routes->get('/sudriagonzalo/public/editar_usuario', 'Home::actualizar');
+$routes->get('/sudriagonzalo/public/login', 'Home::login');
 
 
 //methods rest api
 $routes->post('/sudriagonzalo/public/crear', 'UsuarioController::crear');
 $routes->get('/sudriagonzalo/public/eliminar/(:any)', 'UsuarioController::eliminar/$1');
+$routes->get('/sudriagonzalo/public/editar_usuario/(:any)', 'UsuarioController::editar_usuario/$1');
 
 /*
  * --------------------------------------------------------------------

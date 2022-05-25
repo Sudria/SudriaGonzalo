@@ -1,7 +1,7 @@
 
 
 <form method="POST" action="<?php echo base_url().'/crear'; ?>">
-    <div class="container p-5" id="crear">
+    <div class="container p-5 form-input" id="crear">
         <div class="row ">
             <div class="col-12">
                 <h1 class="text-center mt-5 texto-base">REGISTRARME</h1>

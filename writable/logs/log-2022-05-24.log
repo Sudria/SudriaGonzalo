@@ -1,0 +1,3 @@
+CRITICAL - 2022-05-24 01:37:50 --> Declaration of App\Models\UsuarioModel::update($data) must be compatible with CodeIgniter\Model::update($id = NULL, $data = NULL): bool
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

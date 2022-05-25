@@ -16,8 +16,8 @@
                         <th>Direccion</th>
                         <th>Telefono</th>
                         <th>Rol</th>
-                        <th>Editar</th>
-                        <th>Eliminar</th>
+                  <!--    <th>Editar</th>
+                        <th>Eliminar</th> -->   
                     </tr>
                     <?php foreach($datos as $usuario): ?>
                     <tr>
@@ -31,14 +31,14 @@
                         <td><?php echo $usuario->direccion ?></td>
                         <td><?php echo $usuario->telefono ?></td>
                         <td><?php echo $usuario->rol ?></td>
-                        <td>
+                       <!--  <td>
                             <a href="<?php // echo base_url().'/obtener_id/'.$usuario->id ?>"
                                 class="btn btn-warning btn-sm">Editar</a>
                         </td>
-                        <td>
-                            <a href="<?php echo base_url().'/eliminar/'.$usuario->id?>"
-                             class="btn btn-danger btn-sm">Eliminar</a>
-                        </td>
+                       <td>
+                            <a href="<?php // echo base_url().'/eliminar/'.$usuario->id?>"
+                            class="btn btn-danger btn-sm">Eliminar</a>
+                        </td>--> 
                     </tr>
                     <?php endforeach; ?>
                 </table>

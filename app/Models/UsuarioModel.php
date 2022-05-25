@@ -9,14 +9,31 @@ class UsuarioModel extends Model{
         return $data->getResult();
     }
     
+
     public function create($datos){
         $usuarios = $this->db->table('usuarios');
-        $usuarios->insert($datos);
-		return $this->db->insertID(); 
+		return $usuarios->insert($datos);
     }
    
 
     public function deleteForId($id){
            return $this->db->query("DELETE FROM `usuarios` WHERE `usuarios`.`id` = $id"); 
         }
+
+
+
+    public function readForId($id){
+        $data = $this->db->query("SELECT * FROM usuarios WHERE id = $id");
+        return $data->getResult();
+    }
+
+
+    /* public function update($data){
+           return $this->db->query("UPDATE `usuarios` SET `nombre` = 'Gonzalo',
+            `apellido` = '$data->apellido', `email` = '$data->email', `direccion` = '$data->direccion',
+             `telefono` = '$data->telefono', `usuario` = 'sdasa', `dni` = 'sadasa', `contraseña` = 'asdasa' 
+             WHERE `usuarios`.`id` = $data->id; ");
+        }
+*/
+        
     }

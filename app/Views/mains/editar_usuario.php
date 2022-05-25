@@ -1,4 +1,15 @@
-<form method="POST" action="<?php echo base_url().'/actualizar'; ?>">
+
+
+<?php 
+$id = $datos[0]['id'];
+$nombre = $datos[0]['nombre'];
+$apellido = $datos[0]['apellido'];
+$email = $datos[0]['email']; 
+?>
+
+
+
+<form method="POST" action="<?php echo base_url().'/modificar'; ?>">
     <div class="container p-5" id="crear">
         <div class="row ">
             <div class="col-12">
