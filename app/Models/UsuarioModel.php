@@ -21,12 +21,18 @@ class UsuarioModel extends Model{
         }
 
 
-
     public function readForId($id){
         $data = $this->db->query("SELECT * FROM usuarios WHERE id = $id");
         return $data->getResult();
     }
 
+
+    public function readForUsuario($data){
+      
+        $Usuario = $this->db->table('usuarios');
+        $Usuario->where($data);
+        return $Usuario->get()->getResultArray();
+    }
 
     /* public function update($data){
            return $this->db->query("UPDATE `usuarios` SET `nombre` = 'Gonzalo',

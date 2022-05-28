@@ -11,9 +11,11 @@
 
 <body>
     <header>
+
         <nav class="navbar navbar-expand-lg fixed-top navbar-light texto-base" id="navbar">
             <div class="container">
                 <a class="navbar-brand texto-base" href="<?php echo base_url();?>">ESPINNITAS</a>
+                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -38,8 +40,18 @@
                         </li>
                     </ul>
 
+
+                    <?php if(session('rol')!=null){ ?>
+                        <h4 class="me-5">Hola <?php echo session('nombre') ?>!</h4>
+                        <a class="btn boton-gris" href="<?php echo base_url();?>/logout" >Cerrar sesion</a>
+                        <?php }?>
+
+                    <?php if (session('rol') ==null){ ?>
+
+                       <a class="btn boton-gris mx-2" href="<?php  echo base_url();?>/ingresar" >Iniciar Sesion</a>
+
                        <a class="btn boton-gris" href="<?php echo base_url();?>/crear_usuario" >Registrarse</a>
-                       <a class="btn boton-gris mx-2" href="<?php  echo base_url();?>/login" >Iniciar Sesion</a>
+                       <?php } ?>
                    <!-- <form class="d-flex">
                         <input class="form-control me-2" id="input-buscar" type="search" placeholder="Buscar"
                             aria-label="Buscar">

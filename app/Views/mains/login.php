@@ -29,7 +29,7 @@
                 </div>
 
 
-                <form>
+                <form method="POST" action="<?php echo base_url().'/login'; ?>">
                     <!-- Email input -->
                     <div class="form-outline mb-4">
                         <label class="form-label" for="usuario">Usuario</label>
@@ -38,13 +38,13 @@
                     </div>
                     <!-- Password input -->
                     <div class="form-outline mb-3">
-                        <label class="form-label" for="contraseña">Contraseña</label>
-                        <input type="password" id="contraseña" class="form-control form-control-lg login-input"
-                            placeholder="Ingrese su contraseña" name="contraseña" />
+                        <label class="form-label" for="contra">Contraseña</label>
+                        <input type="password" id="contra" class="form-control form-control-lg login-input"
+                            placeholder="Ingrese su contraseña" name="contra" />
                     </div>
 
                     <div class="text-center text-lg-start mt-4 pt-2">
-                        <button type="button" class="btn boton-marron btn-lg px-5">Ingresar</button>
+                        <button class="btn boton-marron btn-lg px-5">Ingresar</button>
 
                         <p class="small fw-bold mt-2 pt-1 mb-0">¿No tienes cuenta?
                             <a href="<?php echo base_url();?>/crear_usuario" class="link-danger">Registrarse</a>

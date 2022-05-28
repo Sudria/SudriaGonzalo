@@ -12,7 +12,6 @@
                         <th>Apellido</th>
                         <th>Dni</th>
                         <th>Usuario</th>
-                        <th>Contraseña</th>
                         <th>Direccion</th>
                         <th>Telefono</th>
                         <th>Rol</th>
@@ -27,7 +26,6 @@
                         <td><?php echo $usuario->apellido ?></td>
                         <td><?php echo $usuario->dni ?></td>
                         <td><?php echo $usuario->usuario ?></td>
-                        <td><?php echo $usuario->contraseña ?></td>
                         <td><?php echo $usuario->direccion ?></td>
                         <td><?php echo $usuario->telefono ?></td>
                         <td><?php echo $usuario->rol ?></td>
