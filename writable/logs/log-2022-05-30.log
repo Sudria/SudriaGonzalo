@@ -1,0 +1,506 @@
+CRITICAL - 2022-05-30 19:21:04 --> Call to a member function store() on null
+#0 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ProductoController->crear()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-30 20:05:54 --> Undefined variable: file
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\ProductoController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ProductoController->crear()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-30 20:06:19 --> Undefined property: CodeIgniter\HTTP\Files\UploadedFile::$store
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\ProductoController.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 35, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ProductoController->crear()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-30 20:07:06 --> Undefined property: CodeIgniter\HTTP\Files\UploadedFile::$store
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\ProductoController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 36, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ProductoController->crear()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-30 20:13:09 --> The uploaded file has already been moved.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\HTTP\Files\UploadedFile.php(133): CodeIgniter\HTTP\Exceptions\HTTPException::forAlreadyMoved()
+#1 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\ProductoController.php(37): CodeIgniter\HTTP\Files\UploadedFile->move('./public/img/pr...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ProductoController->crear()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-30 20:13:36 --> Call to a member function move() on string
+#0 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ProductoController->crear()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-30 20:21:37 --> Undefined variable: valid
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\ProductoController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 42, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ProductoController->crear()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-30 20:24:13 --> Undefined property: CodeIgniter\HTTP\Files\UploadedFile::$getPath
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\ProductoController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 41, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ProductoController->crear()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-30 20:26:15 --> Call to undefined method CodeIgniter\HTTP\Files\UploadedFile::get_browser_file_name()
+#0 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ProductoController->crear()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-30 20:26:25 --> finfo_file(C:\xampp\tmp\php165C.tmp): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(C:\\x...', 'C:\\xampp\\htdocs...', 109, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Files\File.php(109): finfo_file(Resource id #115, 'C:\\xampp\\tmp\\ph...')
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\ProductoController.php(43): CodeIgniter\Files\File->getMimeType()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ProductoController->crear()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:30:19 --> Invalid file: mains/crear_producto.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/crear_pro...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_pro...', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(54): view('mains/crear_pro...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_producto()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:30:24 --> Invalid file: mains/crear_producto.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/crear_pro...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_pro...', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(54): view('mains/crear_pro...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_producto()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:30:36 --> Invalid file: mains/crear_producto.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/crear_pro...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_pro...', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(54): view('mains/crear_pro...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_producto()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:30:38 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:30:39 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:30:41 --> Invalid file: mains/crear_producto.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/crear_pro...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_pro...', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(54): view('mains/crear_pro...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_producto()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:30:45 --> Invalid file: mains/crear_producto.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/crear_pro...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_pro...', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(54): view('mains/crear_pro...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_producto()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:30:56 --> Invalid file: mains/crear_producto.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/crear_pro...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_pro...', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(54): view('mains/crear_pro...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_producto()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:30:58 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:30:59 --> Invalid file: mains/crear_producto.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/crear_pro...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_pro...', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(54): view('mains/crear_pro...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_producto()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:31:26 --> Invalid file: mains/crear_producto.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/crear_pro...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_pro...', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(54): view('mains/crear_pro...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_producto()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:31:28 --> Invalid file: mains/crear_producto.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/crear_pro...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_pro...', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(54): view('mains/crear_pro...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_producto()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:31:45 --> Invalid file: mains/crear_producto.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/crear_pro...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_pro...', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(54): view('mains/crear_pro...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_producto()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:31:46 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:31:47 --> Invalid file: mains/crear_producto.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/crear_pro...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_pro...', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(54): view('mains/crear_pro...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_producto()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:31:50 --> Invalid file: mains/crear_producto.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/crear_pro...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_pro...', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(54): view('mains/crear_pro...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_producto()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:31:51 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:31:59 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:32:43 --> Invalid file: mains/crear_producto.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/crear_pro...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_pro...', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(54): view('mains/crear_pro...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_producto()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:33:47 --> Invalid file: mains/crear_producto.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/crear_pro...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/crear_pro...', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(54): view('mains/crear_pro...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->crear_producto()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:33:49 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:33:49 --> Invalid file: mains/quienes.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/quienes.p...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/quienes', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(18): view('mains/quienes')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->quienes()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:33:57 --> Invalid file: mains/quienes.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/quienes.p...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/quienes', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(18): view('mains/quienes')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->quienes()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:33:58 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:34:10 --> Invalid file: mains/quienes.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/quienes.p...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/quienes', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(18): view('mains/quienes')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->quienes()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:34:11 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:34:29 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:34:29 --> Invalid file: mains/quienes.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/quienes.p...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/quienes', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(18): view('mains/quienes')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->quienes()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:34:30 --> Invalid file: mains/comercializacion.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/comercial...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/comercial...', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(25): view('mains/comercial...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->comercializacion()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:34:35 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:34:36 --> Invalid file: mains/quienes.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/quienes.p...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/quienes', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(18): view('mains/quienes')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->quienes()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:34:45 --> Invalid file: mains/quienes.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/quienes.p...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/quienes', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(18): view('mains/quienes')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->quienes()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:34:45 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:34:51 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:34:52 --> Invalid file: mains/terminos.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/terminos....')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/terminos', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(40): view('mains/terminos')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->terminos()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:34:52 --> Invalid file: mains/contacto.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/contacto....')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/contacto', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(33): view('mains/contacto')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:34:53 --> Invalid file: mains/quienes.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/quienes.p...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/quienes', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(18): view('mains/quienes')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->quienes()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:34:54 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:36:11 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:36:11 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:36:11 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:36:11 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:36:12 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:36:12 --> Invalid file: mains/principal.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/principal...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/principal', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(11): view('mains/principal')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-30 20:46:32 --> Could not move file php7ED9.tmp to ./img/productos/ ()
+#0 C:\xampp\htdocs\SudriaGonzalo\system\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php7ED9.tmp', './img/productos...', '')
+#1 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\ProductoController.php(36): CodeIgniter\HTTP\Files\UploadedFile->move('./img/productos...', 'cactus.')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ProductoController->crear()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-30 20:47:22 --> Could not move file php4324.tmp to ./img/productos/ ()
+#0 C:\xampp\htdocs\SudriaGonzalo\system\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php4324.tmp', './img/productos...', '')
+#1 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\ProductoController.php(36): CodeIgniter\HTTP\Files\UploadedFile->move('./img/productos...', 'cactus.')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ProductoController->crear()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-30 20:47:35 --> Could not move file php77D1.tmp to ./img/productos/ ()
+#0 C:\xampp\htdocs\SudriaGonzalo\system\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php77D1.tmp', './img/productos...', '')
+#1 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\ProductoController.php(36): CodeIgniter\HTTP\Files\UploadedFile->move('./img/productos...', 'cactus.')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ProductoController->crear()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-30 20:48:32 --> Could not move file php533E.tmp to ./img/productos/ ()
+#0 C:\xampp\htdocs\SudriaGonzalo\system\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php533E.tmp', './img/productos...', '')
+#1 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\ProductoController.php(36): CodeIgniter\HTTP\Files\UploadedFile->move('./img/productos...', 'cactus.')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ProductoController->crear()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-30 20:49:38 --> Could not move file php550F.tmp to ./img/productos/ ()
+#0 C:\xampp\htdocs\SudriaGonzalo\system\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php550F.tmp', './img/productos...', '')
+#1 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\ProductoController.php(36): CodeIgniter\HTTP\Files\UploadedFile->move('./img/productos...', 'cactus.')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ProductoController->crear()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

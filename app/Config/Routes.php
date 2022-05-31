@@ -37,21 +37,27 @@ $routes->get('/sudriagonzalo/public/comercializacion', 'Home::comercializacion')
 $routes->get('/sudriagonzalo/public/contacto', 'Home::contacto');
 $routes->get('/sudriagonzalo/public/terminos', 'Home::terminos');
 $routes->get('/sudriagonzalo/public/crear_usuario', 'Home::crear_usuario');
+$routes->get('/sudriagonzalo/public/crear_producto', 'Home::crear_producto');
 $routes->get('/sudriagonzalo/public/tabla_usuarios', 'Home::lista_usuarios');
 $routes->get('/sudriagonzalo/public/editar_usuario', 'Home::actualizar');
 $routes->get('/sudriagonzalo/public/ingresar', 'Home::login');
 
 
-//methods rest api
+//methods Usuario Controller
 $routes->get('/sudriagonzalo/public/logout', 'UsuarioController::logout');
 $routes->get('/sudriagonzalo/public/eliminar/(:any)', 'UsuarioController::eliminar/$1');
 $routes->get('/sudriagonzalo/public/editar_usuario/(:any)', 'UsuarioController::editar_usuario/$1');
-$routes->post('/sudriagonzalo/public/crear', 'UsuarioController::crear');
 $routes->post('/sudriagonzalo/public/login', 'UsuarioController::login');
+$routes->post('/sudriagonzalo/public/crear', 'UsuarioController::crear');
+
+
+
+//methods Producto Controller
+$routes->post('/sudriagonzalo/public/create_producto', 'ProductoController::crear');
+
 
 /*
- * --------------------------------------------------------------------
- * Additional Routing
+ Additional Routing
  * --------------------------------------------------------------------
  *
  * There will often be times that you need additional routing and you

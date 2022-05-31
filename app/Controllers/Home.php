@@ -49,6 +49,13 @@ class Home extends BaseController
     }
 
 
+    public function crear_producto(){
+        echo view('templates/header');
+        echo view('mains/crear_producto');
+        echo view('templates/footer');
+    }
+
+
     public function actualizar(){
         echo view('templates/header');
         echo view('mains/editar_usuario');
@@ -73,6 +80,8 @@ class Home extends BaseController
         echo view('mains/lista_usuarios',$data);
         echo view('templates/footer');
     }
+
+
     public function editar_usuario(){
         $crud = new UsuarioModel();
         $datos = $crud->read();
