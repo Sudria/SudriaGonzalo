@@ -504,3 +504,22 @@ CRITICAL - 2022-05-30 20:49:38 --> Could not move file php550F.tmp to ./img/prod
 #4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2022-05-30 21:12:51 --> Call to a member function getError() on bool
+#0 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ProductoController->crear()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-30 21:15:21 --> Undefined index: produc.jpg
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\ProductoController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 40, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ProductoController->crear()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-30 21:15:59 --> Call to a member function toString() on string
+#0 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ProductoController->crear()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductoController))
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

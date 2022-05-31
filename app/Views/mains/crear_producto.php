@@ -1,3 +1,17 @@
+
+
+<?php if(session('mensaje')){ ?>
+
+
+<div class="container p-0 mt-5">
+    <div class="alert alert-warning alert-dismissible fade show mt-5" role="alert">
+        <strong>Error!</strong> <?=session('mensaje');?>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <?php }?>
+</div>
+
+
 <form method="POST" action="<?php echo base_url().'/create_producto';?>" enctype="multipart/form-data">
 
 
@@ -12,14 +26,19 @@
             <div class="mb-3 col-6">
                 <label for="titulo" class="form-label mt-2">Titulo</label>
                 <input placeholder="Titulo" type="text" class="form-control" name="titulo" id="titulo">
+
                 <label for="precio" class="form-label mt-2">Precio</label>
                 <input placeholder="Precio" type="precio" class="form-control" name="precio" id="precio">
+
                 <label for="categoria" class="form-label mt-2">Categoria</label>
                 <input placeholder="Categoria" type="text" class="form-control" name="categoria" id="categoria">
+
                 <label for="stock" class="form-label mt-2">Stock</label>
                 <input placeholder="Stock" type="text" class="form-control" name="stock" id="stock">
+
                 <label for="descripcion" class="form-label mt-2">Descripcion</label>
                 <textarea class="form-control" name="descripcion" id="descripcion"> </textarea>
+
                 <button class="btn boton-marron mt-3">Crear</button>
             </div>
 
