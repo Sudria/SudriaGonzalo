@@ -1,5 +1,3 @@
-
-
 <?php if(session('mensaje')){ ?>
 
 
@@ -30,11 +28,17 @@
                 <label for="precio" class="form-label mt-2">Precio</label>
                 <input placeholder="Precio" type="precio" class="form-control" name="precio" id="precio">
 
-                <label for="categoria" class="form-label mt-2">Categoria</label>
-                <input placeholder="Categoria" type="text" class="form-control" name="categoria" id="categoria">
-
                 <label for="stock" class="form-label mt-2">Stock</label>
                 <input placeholder="Stock" type="text" class="form-control" name="stock" id="stock">
+
+                <label for="categoria" class="form-label mt-2">Categoria</label>
+                <select class="form-select form-control " aria-label="Default select example" name="categoria"
+                    id="categoria">
+                    <option selected>Selecciona una categoria</option>
+                    <option value="cac">Cactus</option>
+                    <option value="suc">Suculenta</option>
+                    <option value="pla">Planta</option>
+                </select>
 
                 <label for="descripcion" class="form-label mt-2">Descripcion</label>
                 <textarea class="form-control" name="descripcion" id="descripcion"> </textarea>
@@ -48,16 +52,18 @@
                         onclick="$('.file-upload-input').trigger( 'click' )">Añadir
                         imagen</button>
                     <div class="image-upload-wrap">
-                        <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" name="imagen" id="imagen" />
+                        <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*"
+                            name="imagen" id="imagen" />
                         <div class="drag-text">
                             <h3>Seleccione una imagen</h3>
                         </div>
                     </div>
                     <div class="file-upload-content">
-                        <img class="file-upload-image  " src="#" alt="Tu-imagen"  />
+                        <img class="file-upload-image  " src="#" alt="Tu-imagen" />
                         <div class="image-title-wrap">
-                            <button type="button" onclick="removeUpload()" class="remove-image">Remover <span
-                                    class="image-title">Subir una imagen</span></button>
+                            <button type="button" onclick="removeUpload()" class="remove-image">Quitar Imagen
+                                <span class="image-title">Subir una imagen</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -65,4 +71,3 @@
         </div>
     </div>
 </form>
-

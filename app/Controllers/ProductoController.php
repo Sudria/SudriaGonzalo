@@ -24,9 +24,10 @@ class ProductoController extends BaseController
 
         if ($valid){
 
+            $nombreCat = $this->request->getPost('categoria');
                 $img = $this->request->getFile('imagen');
                 if ($img -> isValid()){
-                $img->move('./img/productos','produc.jpg');
+                $img->move('./img/productos', $nombreCat.'.jpg');
             }   
             
            

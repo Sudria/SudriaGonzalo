@@ -9,7 +9,7 @@ function readURL(input) {
         $('.file-upload-image').attr('src', e.target.result);
         $('.file-upload-content').show();
   
-        $('.image-title').html(input.files[0].name);
+        $('.image-title').html("");
       };
   
       reader.readAsDataURL(input.files[0]);
