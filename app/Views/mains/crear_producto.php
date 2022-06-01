@@ -35,9 +35,9 @@
                 <select class="form-select form-control " aria-label="Default select example" name="categoria"
                     id="categoria">
                     <option selected>Selecciona una categoria</option>
-                    <option value="cac">Cactus</option>
-                    <option value="suc">Suculenta</option>
-                    <option value="pla">Planta</option>
+                    <option value="cactus">Cactus</option>
+                    <option value="suculenta">Suculenta</option>
+                    <option value="planta">Planta</option>
                 </select>
 
                 <label for="descripcion" class="form-label mt-2">Descripcion</label>

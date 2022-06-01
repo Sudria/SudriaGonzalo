@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\UsuarioModel;
-
+use App\Models\ProductoModel;
 
 class Home extends BaseController
 {
@@ -68,6 +68,16 @@ class Home extends BaseController
         echo view('mains/login');
         echo view('templates/footer');
     }
+    public function catalogo(){
+        $crud = new ProductoModel();
+        $datos = $crud->read();
+        $data = [
+            'datos' => $datos
+        ]; 
+        echo view('templates/header');
+        echo view('mains/catalogo',$data);
+        echo view('templates/footer');
+    }
 
     
     public function lista_usuarios(){
@@ -81,17 +91,6 @@ class Home extends BaseController
         echo view('templates/footer');
     }
 
-
-    public function editar_usuario(){
-        $crud = new UsuarioModel();
-        $datos = $crud->read();
-        $data = [
-            'datos' => $datos
-        ]; 
-        echo view('templates/header');
-        echo view('mains/lista_usuarios',$data);
-        echo view('templates/footer');
-    }
 
 
 }

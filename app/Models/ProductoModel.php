@@ -27,7 +27,7 @@ class ProductoModel extends Model{
     }
 
 
-    public function readForUsuario($data){
+    public function readForProducto($data){
       
         $Usuario = $this->db->table('productos');
         $Usuario->where($data);

@@ -15,8 +15,6 @@
                         <th>Direccion</th>
                         <th>Telefono</th>
                         <th>Rol</th>
-                  <!--    <th>Editar</th>
-                        <th>Eliminar</th> -->   
                     </tr>
                     <?php foreach($datos as $usuario): ?>
                     <tr>
