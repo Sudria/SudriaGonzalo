@@ -37,3 +37,14 @@ CRITICAL - 2022-06-01 09:20:04 --> Undefined variable: data
 #7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2022-06-01 11:02:07 --> Use of undefined constant rol - assumed 'rol' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\lista_usuarios.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 4, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/lista_usu...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(90): view('mains/lista_usu...', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->lista_usuarios()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

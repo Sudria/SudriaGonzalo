@@ -1,6 +1,7 @@
+<?php if (session('rol') == 1) {?>
+
+
 <?php if(session('mensaje')){ ?>
-
-
 <div class="container p-0 mt-5">
     <div class="alert alert-warning alert-dismissible fade show mt-5" role="alert">
         <strong>Error!</strong> <?=session('mensaje');?>
@@ -71,3 +72,10 @@
         </div>
     </div>
 </form>
+<?php } else { ?>
+<div class="fondo-gris container">
+    <h2 class="text-center pt-5 my-5 "> ERROR 403</h2>
+    <h4 class="text-center pb-5">No tienes permiso para acceder a esta pagina. <br> Porfavor vuelve al <a
+            href="<?php echo base_url();?>" class="text-center">Inicio</a></h4>
+    <?php } ?>
+</div>

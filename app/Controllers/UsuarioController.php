@@ -78,6 +78,7 @@ public function login(){
         "usuario" => $data[0]['usuario'],
         "nombre" => $data[0]['nombre'],
         "apellido" => $data[0]['apellido'],
+        "email" => $data[0]['email'],
         "rol" => $data[0]['rol']
         ];
 
