@@ -1,0 +1,62 @@
+CRITICAL - 2022-06-02 15:35:09 --> Call to undefined method CodeIgniter\View\View::session()
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/contacto', Array, true)
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(33): view('mains/contacto')
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->contacto()
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-02 16:52:05 --> aplha is not a valid rule.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('aplha')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Gonzalo', Array, Array)
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\ConsultaController.php(15): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ConsultaController->crear()
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-02 16:52:26 --> aplha is not a valid rule.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Validation\Validation.php(300): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('aplha')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Validation\Validation.php(157): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Gonzalo', Array, Array)
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\ConsultaController.php(13): CodeIgniter\Controller->validate(Array)
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ConsultaController->crear()
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-02 17:07:32 --> Class 'App\Models\ConsultaModel' not found
+#0 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ConsultaController->crear()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-06-02 17:08:26 --> Unknown column 'idusuario' in 'field list'
+CRITICAL - 2022-06-02 17:08:26 --> Unknown column 'idusuario' in 'field list'
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Models\ConsultaModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\ConsultaController.php(33): App\Models\ConsultaModel->create(Array)
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ConsultaController->crear()
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+#8 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-06-02 17:09:27 --> Unknown column 'idusuario' in 'field list'
+CRITICAL - 2022-06-02 17:09:27 --> Unknown column 'idusuario' in 'field list'
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Models\ConsultaModel.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\ConsultaController.php(33): App\Models\ConsultaModel->create(Array)
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\ConsultaController->crear()
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ConsultaController))
+#8 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}

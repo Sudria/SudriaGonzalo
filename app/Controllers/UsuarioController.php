@@ -79,7 +79,9 @@ public function login(){
         "nombre" => $data[0]['nombre'],
         "apellido" => $data[0]['apellido'],
         "email" => $data[0]['email'],
-        "rol" => $data[0]['rol']
+        "rol" => $data[0]['rol'],
+        "telefono" => $data[0]['telefono'],
+        "id" => $data[0]['id'],
         ];
 
         $session = session();

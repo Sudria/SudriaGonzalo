@@ -57,6 +57,11 @@ $routes->post('/sudriagonzalo/public/crear', 'UsuarioController::crear');
 $routes->post('/sudriagonzalo/public/create_producto', 'ProductoController::crear');
 
 
+
+//methods Consulta Controller
+$routes->post('/sudriagonzalo/public/create_consulta', 'ConsultaController::crear');
+
+
 /*
  Additional Routing
  * --------------------------------------------------------------------
