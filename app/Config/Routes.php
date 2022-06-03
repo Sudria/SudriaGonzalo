@@ -42,6 +42,7 @@ $routes->get('/sudriagonzalo/public/tabla_usuarios', 'Home::lista_usuarios');
 $routes->get('/sudriagonzalo/public/editar_usuario', 'Home::actualizar');
 $routes->get('/sudriagonzalo/public/ingresar', 'Home::login');
 $routes->get('/sudriagonzalo/public/catalogo', 'Home::catalogo');
+$routes->get('/sudriagonzalo/public/tabla_consultas', 'Home::lista_consultas');
 
 
 //methods Usuario Controller

@@ -3,6 +3,7 @@
 namespace App\Controllers;
 use App\Models\UsuarioModel;
 use App\Models\ProductoModel;
+use App\Models\ConsultaModel;
 
 class Home extends BaseController
 {
@@ -76,6 +77,18 @@ class Home extends BaseController
         ]; 
         echo view('templates/header');
         echo view('mains/catalogo',$data);
+        echo view('templates/footer');
+    }
+
+    
+    public function lista_consultas(){
+        $crud = new ConsultaModel();
+        $datos = $crud->read();
+        $data = [
+            'datos' => $datos
+        ]; 
+        echo view('templates/header');
+        echo view('mains/lista_consultas',$data);
         echo view('templates/footer');
     }
 

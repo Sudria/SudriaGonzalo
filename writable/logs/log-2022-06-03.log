@@ -1,0 +1,37 @@
+CRITICAL - 2022-06-03 00:43:17 --> Undefined variable: totalTime
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Debug\Toolbar\Views\toolbar.tpl.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 40, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Debug\Toolbar.php(501): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Debug\Toolbar.php(464): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(308): CodeIgniter\Events\Events::trigger('pre_system')
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-03 07:56:26 --> Class 'App\Controllers\ConsultaModel' not found
+#0 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->lista_consultas()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-03 07:56:39 --> Undefined property: stdClass::$dni
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\lista_consultas.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/lista_con...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(89): view('mains/lista_con...', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->lista_consultas()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-03 07:59:11 --> Undefined property: stdClass::$usuarioid
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\lista_consultas.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/lista_con...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(89): view('mains/lista_con...', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->lista_consultas()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
