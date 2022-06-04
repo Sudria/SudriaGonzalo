@@ -5,8 +5,7 @@ use App\Models\UsuarioModel;
 use App\Models\ProductoModel;
 use App\Models\ConsultaModel;
 
-class Home extends BaseController
-{
+class Home extends BaseController{
     public function index(){
         echo view('templates/header');
         echo view('mains/principal');
@@ -28,8 +27,7 @@ class Home extends BaseController
     }
 
 
-    public function contacto()
-    {
+    public function contacto(){
         echo view('templates/header');
         echo view('mains/contacto');
         echo view('templates/footer');
@@ -57,9 +55,17 @@ class Home extends BaseController
     }
 
 
-    public function actualizar(){
+    public function editar_usuario($id){
+      
+        $crud = new UsuarioModel();
+        $datos = $crud->readForId($id);
+
+        $data = [
+            'datos' => $datos
+        ]; 
+
         echo view('templates/header');
-        echo view('mains/editar_usuario');
+        echo view('mains/editar_usuario',$data);
         echo view('templates/footer');
     }
 
@@ -69,6 +75,8 @@ class Home extends BaseController
         echo view('mains/login');
         echo view('templates/footer');
     }
+
+
     public function catalogo(){
         $crud = new ProductoModel();
         $datos = $crud->read();

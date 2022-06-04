@@ -32,8 +32,8 @@ class UsuarioController extends BaseController
                 "contra" => [password_hash($this->request->getPost('contra'), PASSWORD_DEFAULT)],
         ];
         $crud = new UsuarioModel();
-    $respuesta = $crud->create($datos);
-    return redirect()->to(base_url().'/');
+        $respuesta = $crud->create($datos);
+        return redirect()->to(base_url().'/');
 
         }else{
             $error = $this->validator->listErrors();
@@ -41,6 +41,7 @@ class UsuarioController extends BaseController
             return redirect()->to(base_url('/crear_usuario'));
         }
 }
+
 
 public function eliminar($id){
     $crud = new UsuarioModel();
@@ -52,10 +53,40 @@ public function eliminar($id){
         return redirect()->to(base_url().'/tabla_usuarios')->with('mensaje','5');
     }
 }
-public function modificar($id){
-    $crud = new UsuarioModel();
-    $datos = $crud->readForId($id);
-    $respuesta = $crud->update($datos);
+
+
+public function modificar(){
+   
+    $valid = $this->validate([
+        'nombre'   => 'required|min_length[3]|max_length[20]|alpha',
+        'apellido'   => 'required|min_length[3]|max_length[20]|alpha',
+        'email'   => 'required|min_length[3]|max_length[50]',
+        'rep_email'   => 'required|min_length[3]|max_length[50]|matches[email]',
+        'direccion'   => 'required|min_length[8]|max_length[75]|',
+        'telefono'   => 'required|min_length[8]|max_length[20]|is_natural',
+        'contra'   => 'required|min_length[8]',
+        'rep_contra'   => 'required|min_length[8]|matches[contra]',
+    ]);
+    $id = $this->request->getPost('id');
+
+    if ($valid){
+        $datos = [ 
+            "nombre" => $_POST['nombre'],
+            "apellido" => $_POST['apellido'],
+            "email" => $_POST['email'],
+            "direccion" => $_POST['direccion'],
+            "telefono" => $_POST['telefono'],
+            "contra" => [password_hash($this->request->getPost('contra'), PASSWORD_DEFAULT)],
+        ];
+        $crud = new UsuarioModel();
+        $respuesta = $crud->toUpdate($id, $datos);
+        return redirect()->to(base_url().'/');
+
+        }else{
+            $error = $this->validator->listErrors();
+            session()->setFlashdata('mensaje',$error); 
+            return redirect()->to(base_url('/editar_usuario/'.$id));
+        }
 }
 
 public function login(){
@@ -96,7 +127,8 @@ public function login(){
     }
 }
 
-        public function logout(){
+
+public function logout(){
         $session = session();
         $session->destroy();
        return redirect()->to(base_url().'/');

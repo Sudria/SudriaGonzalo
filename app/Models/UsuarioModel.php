@@ -22,24 +22,15 @@ class UsuarioModel extends Model{
 
 
     public function readForId($id){
-        $data = $this->db->query("SELECT * FROM usuarios WHERE id = $id");
-        return $data->getResult();
+        $datos = $this->db->query("SELECT * FROM `usuarios` WHERE id = $id");
+        return $datos->getRow();
     }
 
-
-    public function readForUsuario($data){
-      
-        $Usuario = $this->db->table('usuarios');
-        $Usuario->where($data);
-        return $Usuario->get()->getResultArray();
+    public function toUpdate($id, $data) {
+        $tabla = $this->db->table('usuarios');
+        $tabla->set($data);
+        $tabla->where('id', $id);
+        return $tabla->update();
     }
 
-    /* public function update($data){
-           return $this->db->query("UPDATE `usuarios` SET `nombre` = 'Gonzalo',
-            `apellido` = '$data->apellido', `email` = '$data->email', `direccion` = '$data->direccion',
-             `telefono` = '$data->telefono', `usuario` = 'sdasa', `dni` = 'sadasa', `contraseña` = 'asdasa' 
-             WHERE `usuarios`.`id` = $data->id; ");
-        }
-*/
-        
     }

@@ -1,6 +1,8 @@
 <div class="container mt-5  ">
     <div class="row fondo-gris py-5 mt-5 ">
+        
         <?php foreach($datos as $producto): ?>
+           
         <div class="col-3">
             <div class="card product-card mx-auto my-3">
                 <img src="./img/productos/<?php echo $producto->imagen ?>"

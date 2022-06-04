@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initialscale=1, shrink-to-fit=no">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/miestilo.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link href="<?php echo base_url();?>/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>/css/miestilo.css" rel="stylesheet">
 </head>
 
 <body>
@@ -50,7 +49,8 @@
                         <?php echo session('nombre') ?>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><button class="dropdown-item" type="button">Configuracion</button></li>
+                        <li><a href="<?php echo base_url()."/editar_usuario/".session('id');?>" class="text-decoration-none"><button
+                                    class="dropdown-item" type="button">Configuracion </button></a></li>
 
                         <?php if(session('rol') == 1){ ?>
                         <li><a href="<?php echo base_url();?>/tabla_usuarios" class="text-decoration-none"><button
