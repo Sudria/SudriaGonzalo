@@ -7,7 +7,7 @@
         </div>
 
         <div class="col-3">
-            <select class="form-select mb-3" aria-label="Default select example" id="clasif">
+            <select class="form-select mb-3 clasif" aria-label="Default select example" id="clasif">
                 <option selected value="all">Todas</option>
                 <option value="not_resolved">Sin resolver</option>
                 <option value="resolved">Resueltas</option>
@@ -28,7 +28,7 @@
                     <th>Id usuario</th>
                     <th>Estado</th>
                 </tr>
-                <tbody id="myTable">
+                <tbody class="myTable">
                     <?php foreach($datos as $consulta): ?>
                     <tr>
                         <td><?php echo $consulta->id ?></td>
@@ -41,7 +41,7 @@
                         <td class="estado" estado-value=<?php echo $consulta->estado ?>><?php if ($consulta->estado){?>
                             Resuelta
                             <?php }else{?>
-                            Sin resolver
+                            S/resolver
                             <?php }?>
                         </td>
 

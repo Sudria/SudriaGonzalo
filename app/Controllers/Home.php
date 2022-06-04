@@ -92,6 +92,18 @@ class Home extends BaseController
         echo view('templates/footer');
     }
 
+
+    public function lista_productos(){
+        $crud = new ProductoModel();
+        $datos = $crud->read();
+        $data = [
+            'datos' => $datos
+        ]; 
+        echo view('templates/header');
+        echo view('mains/lista_productos',$data);
+        echo view('templates/footer');
+    }
+
     
     public function lista_usuarios(){
         $crud = new UsuarioModel();

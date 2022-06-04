@@ -38,13 +38,12 @@ $('.image-upload-wrap').bind('dragleave', function () {
 });
 
 $(document).ready(function () {
-  $("#clasif").on("change", event => {
-    $("#myTable tr").each((idx, val) => {
+  $(".clasif").on("change", event => {
+    $(".myTable tr").each((idx, val) => {
       let estado = $(val).children(".estado").eq(0).attr("estado-value");
-
       estado = Boolean(Number(estado))
-
       $(val).toggle(transformation[event.target.value](estado));
     })
   });
 });
+

@@ -55,7 +55,7 @@
                         <?php if(session('rol') == 1){ ?>
                         <li><a href="<?php echo base_url();?>/tabla_usuarios" class="text-decoration-none"><button
                                     class="dropdown-item" type="button">Usuarios </button></a></li>
-                        <li><a href="<?php echo base_url();?>/tabla_usuarios" class="text-decoration-none"><button
+                        <li><a href="<?php echo base_url();?>/tabla_productos" class="text-decoration-none"><button
                                     class="dropdown-item" type="button">Productos </button></a></li>
                         <li><a href="<?php echo base_url();?>/tabla_consultas" class="text-decoration-none"><button
                                     class="dropdown-item" type="button">Consultas </button></a></li>
