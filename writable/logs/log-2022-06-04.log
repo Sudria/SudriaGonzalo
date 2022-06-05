@@ -2832,3 +2832,12 @@ CRITICAL - 2022-06-04 17:11:29 --> Undefined variable: id
 #3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 {main}
+CRITICAL - 2022-06-04 18:19:46 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(104): CodeIgniter\Model->__call('readForUsuario', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->login()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

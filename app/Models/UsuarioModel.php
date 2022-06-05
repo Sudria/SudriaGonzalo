@@ -33,4 +33,11 @@ class UsuarioModel extends Model{
         return $tabla->update();
     }
 
+    public function readForUsuario($data){
+
+        $usuario = $this->db->table('usuarios');
+        $usuario->where($data);
+        return $usuario->get()->getResultArray();
+    }
+
     }
