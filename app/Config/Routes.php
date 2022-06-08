@@ -45,6 +45,12 @@ $routes->get('/sudriagonzalo/public/tabla_consultas', 'Home::lista_consultas');
 $routes->get('/sudriagonzalo/public/tabla_productos', 'Home::lista_productos');
 
 $routes->get('/sudriagonzalo/public/editar_usuario/(:num)', 'Home::editar_usuario/$1');
+$routes->get('/sudriagonzalo/public/editar_producto/(:num)', 'Home::editar_producto/$1');
+
+
+//pruebas
+$routes->get('/sudriagonzalo/public/prueba', 'Home::prueba');
+
 
 
 //methods Usuario Controller
@@ -58,6 +64,7 @@ $routes->post('/sudriagonzalo/public/modificar_usuario', 'UsuarioController::mod
 
 //methods Producto Controller
 $routes->post('/sudriagonzalo/public/create_producto', 'ProductoController::crear');
+$routes->post('/sudriagonzalo/public/modificar_producto', 'ProductoController::modificar');
 
 
 

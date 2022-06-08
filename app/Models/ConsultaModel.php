@@ -30,7 +30,6 @@ class ConsultaModel extends Model
 
     public function readForProducto($data)
     {
-
         $Usuario = $this->db->table('consultas');
         $Usuario->where($data);
         return $Usuario->get()->getResultArray();

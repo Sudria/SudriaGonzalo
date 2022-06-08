@@ -13,7 +13,7 @@ class ProductoController extends BaseController
     {
 
         $valid = $this->validate([
-            'titulo' => 'required|min_length[3]|max_length[20]',
+            'titulo' => 'required|min_length[3]|max_length[50]',
             'precio' => 'required|min_length[1]|max_length[6]|is_natural',
             'categoria' => 'required|alpha',
             'stock' => 'required|min_length[1]|max_length[4]|is_natural',
@@ -48,6 +48,56 @@ class ProductoController extends BaseController
         }
     }
 
+    public function modificar()
+    {
+        $valid = $this->validate([
+            'titulo' => 'required|min_length[3]|max_length[50]',
+            'precio' => 'required|min_length[1]|max_length[6]|is_natural',
+            'categoria' => 'required|alpha',
+            'stock' => 'required|min_length[1]|max_length[4]|is_natural',
+            'descripcion' => 'required|min_length[0]|max_length[255]',
+        ]);
+
+        if ($valid) {
+            $id = $this->request->getPost('id');
+            $crud = new ProductoModel();
+
+            $nombreCat = $this->request->getPost('categoria');
+
+            $img = $this->request->getFile('imagen');
+
+            if ($img->isValid()) {
+                $img->move('./img/productos', $nombreCat . '.jpg');
+                $datos = [
+                    "titulo" => $_POST['titulo'],
+                    "precio" => $_POST['precio'],
+                    "categoria" => $_POST['categoria'],
+                    "stock" => $_POST['stock'],
+                    "descripcion" => $_POST['descripcion'],
+                    "imagen" => [$img->getName()],
+                ];
+
+                $respuesta = $crud->toUpdate($id, $datos);
+                return redirect()->to(base_url() . '/tabla_productos');
+
+            } else {
+                $datos = [
+                    "titulo" => $_POST['titulo'],
+                    "precio" => $_POST['precio'],
+                    "categoria" => $_POST['categoria'],
+                    "stock" => $_POST['stock'],
+                    "descripcion" => $_POST['descripcion'],
+                ];
+                $respuesta = $crud->toUpdate($id, $datos);
+                return redirect()->to(base_url() . '/tabla_productos');
+            }
+        } else {
+            $error = $this->validator->listErrors();
+            session()->setFlashdata('mensaje', $error);
+            return redirect()->to(base_url('/tabla_productos'));
+        }
+    }
+
     public function eliminar($id)
     {
         $crud = new ProductoModel();
@@ -58,13 +108,6 @@ class ProductoController extends BaseController
         } else {
             return redirect()->to(base_url() . '/tabla_productos')->with('mensaje', '5');
         }
-    }
-
-    public function modificar($id)
-    {
-        $crud = new ProductoModel();
-        $datos = $crud->readForId($id);
-        $respuesta = $crud->update($datos);
     }
 
 }

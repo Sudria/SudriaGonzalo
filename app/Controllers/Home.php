@@ -72,6 +72,36 @@ class Home extends BaseController
         echo view('templates/footer');
     }
 
+
+    public function editar_producto($id)
+    {
+
+        $crud = new ProductoModel();
+        $datos = $crud->readForId($id);
+
+        $data = [
+            'datos' => $datos,
+        ];
+        
+        echo view('templates/header');
+        echo view('mains/editar_producto', $data);
+        echo view('templates/footer');
+    }
+
+    public function prueba (){
+        $crud = new ProductoModel();
+        $datos = $crud->readForId(8);
+
+        $data = [
+            'datos' => $datos,
+        ];  
+              
+        echo view('mains/editar_producto', $data);
+        echo view('templates/footer');
+
+        exit;
+    }
+
     public function login()
     {
         echo view('templates/header');

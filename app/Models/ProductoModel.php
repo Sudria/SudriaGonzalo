@@ -24,16 +24,23 @@ class ProductoModel extends Model
 
     public function readForId($id)
     {
-        $data = $this->db->query("SELECT * FROM productos WHERE id = $id");
-        return $data->getResult();
+        $datos = $this->db->query("SELECT * FROM `productos` WHERE id = $id");
+        return $datos->getRow();
     }
 
     public function readForProducto($data)
     {
-
         $Usuario = $this->db->table('productos');
         $Usuario->where($data);
         return $Usuario->get()->getResultArray();
+    }
+
+    public function toUpdate($id, $data)
+    {
+        $tabla = $this->db->table('productos');
+        $tabla->set($data);
+        $tabla->where('id', $id);
+        return $tabla->update();
     }
 
 }
