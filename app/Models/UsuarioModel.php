@@ -17,9 +17,16 @@ class UsuarioModel extends Model
         return $usuarios->insert($datos);
     }
 
-    public function deleteForId($id)
+    public function changeState($id,$estado)
     {
-        return $this->db->query("DELETE FROM `usuarios` WHERE `usuarios`.`id` = $id");
+        $tabla = $this->db->table('usuarios');
+        if($estado){
+            $tabla->set('estado', '0');
+        }else{
+            $tabla->set('estado', '1');
+        }
+        $tabla->where('id', $id);
+        return $tabla->update();
     }
 
     public function readForId($id)

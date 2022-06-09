@@ -4,7 +4,7 @@
             <h1 class=" text-center my-5 text-light titulo"> ESPINNITAS</h1>
             <p class="text-light text-center mb-5" id="especialistas"> ESPECIALISTAS EN PLANTAS</p>
             <div class="d-flex justify-content-center mb-5">
-                <button class="btn boton-marron ">Comprar online</button>
+                <a href="<?php echo base_url();?>/catalogo" class="btn boton-marron ">Comprar online</a>
             </div>
         </div>
     </div>

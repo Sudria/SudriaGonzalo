@@ -37,11 +37,10 @@
 
                 <label for="categoria" class="form-label mt-2">Categoria</label>
                 <select class="form-select form-control " aria-label="Default select example" name="categoria"
-                    id="categoria" value="<?php echo $datos->categoria;?>">
-                    <option selected disabled hidden>Selecciona una categoria</option>
-                    <option value="cactus">Cactus</option>
-                    <option value="suculenta">Suculenta</option>
-                    <option value="planta">Planta</option>
+                    id="categoria" >
+                    <option <?php if($datos->categoria == "cactus"){echo ("selected");} ?>value="cactus" >Cactus</option>
+                    <option <?php if($datos->categoria == "suculenta"){echo ("selected");} ?> value="suculenta">Suculenta</option>
+                    <option <?php if($datos->categoria == "planta"){echo ("selected");} ?> value="planta">Planta</option>
                 </select>
 
                 <label for="descripcion" class="form-label mt-2">Descripcion</label>

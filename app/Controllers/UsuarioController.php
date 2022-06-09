@@ -17,8 +17,8 @@ class UsuarioController extends BaseController
             'telefono' => 'required|min_length[8]|max_length[20]|is_natural',
             'usuario' => 'required|min_length[5]|max_length[20]|is_unique[usuarios.usuario]',
             'dni' => 'required|min_length[8]|max_length[8]|is_natural|is_unique[usuarios.dni]',
-            'contra' => 'required|min_length[8]',
-            'rep_contra' => 'required|min_length[8]|matches[contra]',
+            'contra' => 'required|min_length[5]|max_length[20]',
+            'rep_contra' => 'required|min_length[5]|matches[contra]',
         ]);
 
         if ($valid) {
@@ -44,21 +44,9 @@ class UsuarioController extends BaseController
         }
     }
 
-    public function eliminar($id)
-    {
-        $crud = new UsuarioModel();
-        $respuesta = $crud->deleteForId($id);
-
-        if ($respuesta) {
-            return redirect()->to(base_url() . '/tabla_usuarios')->with('mensaje', '4');
-        } else {
-            return redirect()->to(base_url() . '/tabla_usuarios')->with('mensaje', '5');
-        }
-    }
 
     public function modificar()
     {
-
         $valid = $this->validate([
             'nombre' => 'required|min_length[3]|max_length[20]|alpha',
             'apellido' => 'required|min_length[3]|max_length[20]|alpha',
@@ -66,7 +54,7 @@ class UsuarioController extends BaseController
             'rep_email' => 'required|min_length[3]|max_length[50]|matches[email]',
             'direccion' => 'required|min_length[8]|max_length[75]|',
             'telefono' => 'required|min_length[8]|max_length[20]|is_natural',
-            'contra' => 'required|min_length[8]',
+            'contra' => 'required|min_length[8]|max_length[20]',
             'rep_contra' => 'required|min_length[8]|matches[contra]',
         ]);
 
@@ -96,7 +84,7 @@ class UsuarioController extends BaseController
     {
         $valid = $this->validate([
             'usuario' => 'required|min_length[5]|max_length[20]',
-            'contra' => 'required|min_length[8]|max_length[20]',
+            'contra' => 'required|min_length[5]|max_length[20]',
         ]);
 
         if ($valid) {
@@ -138,4 +126,15 @@ class UsuarioController extends BaseController
         return redirect()->to(base_url() . '/');
     }
 
+    public function cambioEstado($id, $estado)
+    {
+        $crud = new UsuarioModel();
+        $respuesta = $crud->changeState($id, $estado);
+
+        if ($respuesta) {
+            return redirect()->to(base_url() . '/tabla_usuarios')->with('mensaje', '4');
+        } else {
+            return redirect()->to(base_url() . '/tabla_usuarios')->with('mensaje', '5');
+        }
+    }
 }

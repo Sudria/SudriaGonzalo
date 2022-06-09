@@ -16,6 +16,7 @@
                         <th>Direccion</th>
                         <th>Telefono</th>
                         <th>Rol</th>
+                        <th>Estado</th>
                     </tr>
                     <?php foreach($datos as $usuario): ?>
                     <tr>
@@ -27,15 +28,21 @@
                         <td><?php echo $usuario->usuario ?></td>
                         <td><?php echo $usuario->direccion ?></td>
                         <td><?php echo $usuario->telefono ?></td>
-                        <td><?php echo $usuario->rol ?></td>
-                        <!--  <td>
-                            <a href="<?php // echo base_url().'/obtener_id/'.$usuario->id ?>"
-                                class="btn btn-warning btn-sm">Editar</a>
+                        <td><?php if ($usuario->rol){?>
+                            Admin
+                        <?php }else{?>
+                        Usuario
+                            <?php }?>
                         </td>
-                       <td>
-                            <a href="<?php // echo base_url().'/eliminar/'.$usuario->id?>"
-                            class="btn btn-danger btn-sm">Eliminar</a>
-                        </td>-->
+                        <td><?php if ($usuario->rol==0){?>
+                            <?php if ($usuario->estado){?>
+                            <a  href="<?php echo base_url()."/cambio_estadou/".$usuario->id."/".$usuario->estado;?>" class="btn btn-success" style="width:8.5rem;">ACTIVADO</a>
+                        <?php }else{?>
+                            <a  href="<?php echo base_url()."/cambio_estadou/".$usuario->id."/".$usuario->estado;?>" class="btn btn-danger" style="width:8.5rem;">DESACTIVADO</a>
+                            <?php } }else {?>
+                               <button class="btn btn-secondary" style="width:8.5rem;" disabled>INMODIFICABLE</button> 
+                            <?php } ?>
+                        </td>
                     </tr>
                     <?php endforeach; ?>
                 </table>

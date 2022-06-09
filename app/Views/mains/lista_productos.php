@@ -43,15 +43,25 @@
                     <td><?php echo $producto->categoria ?></td>
                     <td><?php echo $producto->precio ?></td>
                     <td><?php echo $producto->stock ?></td>
-                    <td class="estado" estado-value=<?php echo $producto->activo ?>><?php echo $producto->activo ?>
+                    <td class="estado" estado-value=<?php echo $producto->estado ?>>
+                        <?php if ($producto->estado){?>
+                        Activo
+                        <?php }else{?>
+                        Desactivado
+                        <?php }?>
                     </td>
                     <td class="col-2"><img src="./img/productos/<?php echo $producto->imagen ?>" class="img-fluid w-100"
                             style=" height:7rem" alt=""> </td>
                     <td>
                         <a href="<?php  echo base_url().'/editar_producto/'.$producto->id ?>"
-                            class="btn btn-warning btn-sm">Editar</a>
-                        <a href="<?php // echo base_url().'/eliminar/'.$producto->id?>"
-                            class="btn btn-danger btn-sm">Activar</a>
+                            class="btn btn-primary btn-sm">Editar</a>
+                        <?php if ($producto->estado){?>
+                        <a href="<?php echo base_url()."/cambio_estadop/".$producto->id."/".$producto->estado;?>"
+                            class="btn btn-danger btn-sm" style="width:5rem;">Desactivar</a>
+                        <?php }else{?>
+                        <a href="<?php echo base_url()."/cambio_estadop/".$producto->id."/".$producto->estado;?>"
+                            class="btn btn-success btn-sm" style="width:5rem;">Activar</a>
+                        <?php }?>
                     </td>
                 </tr>
                 <?php endforeach; ?>

@@ -98,10 +98,10 @@ class ProductoController extends BaseController
         }
     }
 
-    public function eliminar($id)
+    public function cambioEstado($id, $estado)
     {
         $crud = new ProductoModel();
-        $respuesta = $crud->deleteForId($id);
+        $respuesta = $crud->changeState($id, $estado);
 
         if ($respuesta) {
             return redirect()->to(base_url() . '/tabla_productos')->with('mensaje', '4');

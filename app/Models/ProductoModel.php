@@ -17,9 +17,16 @@ class ProductoModel extends Model
         return $productos->insert($datos);
     }
 
-    public function deleteForId($id)
+    public function changeState($id,$estado)
     {
-        return $this->db->query("DELETE FROM `productos` WHERE `productos`.`id` = $id");
+        $tabla = $this->db->table('productos');
+        if($estado){
+            $tabla->set('estado', '0');
+        }else{
+            $tabla->set('estado', '1');
+        }
+        $tabla->where('id', $id);
+        return $tabla->update();
     }
 
     public function readForId($id)

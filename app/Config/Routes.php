@@ -59,12 +59,14 @@ $routes->get('/sudriagonzalo/public/eliminar/(:any)', 'UsuarioController::elimin
 $routes->post('/sudriagonzalo/public/login', 'UsuarioController::login');
 $routes->post('/sudriagonzalo/public/crear', 'UsuarioController::crear');
 $routes->post('/sudriagonzalo/public/modificar_usuario', 'UsuarioController::modificar');
+$routes->get('/sudriagonzalo/public/cambio_estadou/(:num)/(:num)', 'UsuarioController::cambioEstado/$1/$2');
 
 
 
 //methods Producto Controller
 $routes->post('/sudriagonzalo/public/create_producto', 'ProductoController::crear');
 $routes->post('/sudriagonzalo/public/modificar_producto', 'ProductoController::modificar');
+$routes->get('/sudriagonzalo/public/cambio_estadop/(:num)/(:num)', 'ProductoController::cambioEstado/$1/$2');
 
 
 
