@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 08, 2022 at 09:35 PM
+-- Generation Time: Jun 14, 2022 at 09:53 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -43,11 +43,35 @@ CREATE TABLE `consultas` (
 --
 
 INSERT INTO `consultas` (`nombre`, `apellido`, `id`, `usuarioId`, `mensaje`, `email`, `telefono`, `estado`) VALUES
-('Gonzalo', 'cattaneo', 2, 0, ' prueba 1 2 3', 'sudria.gonzalo@gmail.com', '03794403693', 0),
+('Gonzalo', 'cattaneo', 2, 0, ' prueba 1 2 3', 'sudria.gonzalo@gmail.com', '03794403693', 1),
 ('jose', 'cattaneo', 3, 0, ' mensaje de usuario sin registrar', 'sudria.gonzalo@gmail.com', '03794403693', 0),
 ('Gonzalo', 'cattaneo', 4, 34, ' asdasda', 'sudria.gonzalo@gmail.com', '0379440369', 0),
 ('Gonzalo', 'cattaneo', 5, 34, ' prueba usuario registrado', 'sudria.gonzalo@gmail.com', '0379440369', 1),
 ('Gonzalo', 'cattaneo', 6, 34, ' Probando msj largo.Probando msj largo.Probando msj largo.Probando msj largo.Probando msj largo.Probando msj largo.Probando msj largo.Probando msj largo.', 'sudria.gonzalo@gmail.com', '0379440369', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `detalles`
+--
+
+CREATE TABLE `detalles` (
+  `id` int(10) NOT NULL,
+  `id_producto` int(10) NOT NULL,
+  `cantidad` int(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `factura`
+--
+
+CREATE TABLE `factura` (
+  `id` int(10) NOT NULL,
+  `id_usuario` int(10) NOT NULL,
+  `id_detalle` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -62,7 +86,7 @@ CREATE TABLE `productos` (
   `categoria` varchar(9) NOT NULL,
   `precio` float NOT NULL,
   `stock` int(6) NOT NULL,
-  `activo` tinyint(1) NOT NULL DEFAULT 1,
+  `estado` tinyint(1) NOT NULL DEFAULT 1,
   `imagen` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -70,10 +94,10 @@ CREATE TABLE `productos` (
 -- Dumping data for table `productos`
 --
 
-INSERT INTO `productos` (`id`, `titulo`, `descripcion`, `categoria`, `precio`, `stock`, `activo`, `imagen`) VALUES
+INSERT INTO `productos` (`id`, `titulo`, `descripcion`, `categoria`, `precio`, `stock`, `estado`, `imagen`) VALUES
 (8, 'Cactus espinas', 'cactus copado modificado', 'cactus', 250, 200, 1, 'cactus_2.jpg'),
 (9, 'Planta', 'Planta copada', 'planta', 200, 40, 1, 'pla.jpg'),
-(10, 'Suculenta', 'Suculenta copada', 'suculenta', 200, 40, 0, 'suc.jpg'),
+(10, 'Suculenta', 'Suculenta copada', 'suculenta', 200, 40, 1, 'suc.jpg'),
 (11, 'Opuntia', ' Cactus Lindo', 'cactus', 800, 20, 1, 'cactus.jpg'),
 (12, 'Garra de oso', 'Garra de oso muy linda ', 'cactus', 300, 30, 1, 'cactus_1.jpg');
 
@@ -93,17 +117,19 @@ CREATE TABLE `usuarios` (
   `dni` varchar(8) NOT NULL,
   `contra` varchar(100) NOT NULL,
   `id` int(11) NOT NULL,
-  `rol` int(1) NOT NULL DEFAULT 0
+  `rol` int(1) NOT NULL DEFAULT 0,
+  `estado` tinyint(1) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `usuarios`
 --
 
-INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `direccion`, `telefono`, `usuario`, `dni`, `contra`, `id`, `rol`) VALUES
-('Gonzalo', 'Sudria', 'sudria.gonzalo@gmail.com', 'misiones 1387', '0379440369', 'bimbitou', '40049564', '$2y$10$lLykaIb8woF3zJl1onb4S.u1hIPm9hIizttWYOkdoHF6Qf8PgLWE6', 34, 1),
-('Tincho', 'Marti', 'tincho@gmail.co', 'asdasdas 138', '011123456', 'tinch', '4004956', '$2y$10$l6y4x7/7a22nScqHX6OJ2OZEW2eljXrMnSIUt0jyGhCTDdKUrOfOy', 35, 0),
-('jose', 'prueba', 'akjsndjas@asdas.com', 'misiones 1387', '0379440369', 'joseig', '40049563', '$2y$10$9o8cgHHeEe2flGoJhXr32OPK6BulhJ/o/YsfMlq162O7APFPKrZBC', 36, 0);
+INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `direccion`, `telefono`, `usuario`, `dni`, `contra`, `id`, `rol`, `estado`) VALUES
+('Gonzalo', 'Sudria', 'sudria.gonzalo@gmail.com', 'misiones 1387', '0379440369', 'bimbitou', '40049564', '$2y$10$lLykaIb8woF3zJl1onb4S.u1hIPm9hIizttWYOkdoHF6Qf8PgLWE6', 34, 1, 1),
+('Tincho', 'Marti', 'tincho@gmail.co', 'asdasdas 138', '011123456', 'tinch', '4004956', '$2y$10$l6y4x7/7a22nScqHX6OJ2OZEW2eljXrMnSIUt0jyGhCTDdKUrOfOy', 35, 0, 1),
+('jose', 'prueba', 'akjsndjas@asdas.com', 'misiones 1387', '0379440369', 'joseig', '40049563', '$2y$10$9o8cgHHeEe2flGoJhXr32OPK6BulhJ/o/YsfMlq162O7APFPKrZBC', 36, 0, 1),
+('admin', 'admin', 'admin@admin.com', 'admin admin', '0379440369', 'admin', '54548948', '$2y$10$LXJseYvhxsA//7.J48vvNOLi.8WQ6AoxmJCI8bxLqh8WSzAoT7Bcq', 37, 1, 1);
 
 --
 -- Indexes for dumped tables
@@ -113,6 +139,18 @@ INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `direccion`, `telefono`, 
 -- Indexes for table `consultas`
 --
 ALTER TABLE `consultas`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `detalles`
+--
+ALTER TABLE `detalles`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `factura`
+--
+ALTER TABLE `factura`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -138,6 +176,18 @@ ALTER TABLE `consultas`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
+-- AUTO_INCREMENT for table `detalles`
+--
+ALTER TABLE `detalles`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `factura`
+--
+ALTER TABLE `factura`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `productos`
 --
 ALTER TABLE `productos`
@@ -147,7 +197,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
