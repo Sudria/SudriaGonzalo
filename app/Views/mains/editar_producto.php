@@ -47,7 +47,7 @@
                 <textarea class="form-control" name="descripcion"
                     id="descripcion"><?php echo $datos->descripcion;?></textarea>
 
-                <button class="btn boton-marron mt-3">Crear</button>
+                <button class="btn boton-marron mt-3">Actualizar</button>
             </div>
 
 

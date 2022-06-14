@@ -43,6 +43,8 @@
                     </ul>
 
                 <?php if(session('rol')!=null){ ?>
+
+                   <a href="<?= base_url()."/prueba";?>" class="btn boton-gris"><i class="fa-solid fa-cart-shopping"></i></a> 
                 <div class="dropdown  justify-content-center text-center">
                     <button class="btn boton-gris dropdown-toggle m-2" type="button" id="usuarioMenu"
                         data-bs-toggle="dropdown" aria-expanded="false">

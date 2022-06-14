@@ -35,4 +35,15 @@ class ConsultaModel extends Model
         return $Usuario->get()->getResultArray();
     }
 
+    public function changeState($id,$estado)
+    {
+        $tabla = $this->db->table('consultas');
+        if($estado){
+            $tabla->set('estado', '0');
+        }else{
+            $tabla->set('estado', '1');
+        }
+        $tabla->where('id', $id);
+        return $tabla->update();
+    }
 }

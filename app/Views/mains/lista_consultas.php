@@ -7,7 +7,15 @@
         </div>
 
         <div class="col-3">
-            <select class="form-select mb-3 clasif" aria-label="Default select example" id="clasif">
+            <select class="form-select mb-3 selector" aria-label="Default select example" id="consulta">
+                <option selected value="all">Todas</option>
+                <option value="consulta">Consulta</option>
+                <option value="contacto">Contacto</option>
+            </select>
+        </div>
+
+        <div class="col-3">
+            <select class="form-select mb-3 selector" aria-label="Default select example" id="clasif">
                 <option selected value="all">Todas</option>
                 <option value="not_resolved">Sin resolver</option>
                 <option value="resolved">Resueltas</option>
@@ -37,22 +45,25 @@
                         <td><?php echo $consulta->apellido ?></td>
                         <td><?php echo $consulta->telefono ?></td>
                         <td><?php echo $consulta->mensaje ?></td>
-                        <td><?php echo $consulta->usuarioId ?></td>
-                        <td class="estado" estado-value=<?php echo $consulta->estado ?>><?php if ($consulta->estado){?>
-                            Resuelta
+                        <td class="user" user-value=<?php echo $consulta->usuarioId ?>>
+                        
+                        <?php if ($consulta->usuarioId){ ?>
+                        <?php echo $consulta->usuarioId?>
+                        <?php }else{ ?>
+                            Visitante
+                        <?php }?>
+                    </td>
+                        <td class="estado" estado-value=<?php echo $consulta->estado ?>>
+                        <?php if ($consulta->estado){?>
+                            <a class="btn btn-danger" href="<?php echo base_url()."/cambio_estadoc/".$consulta->id."/".$consulta->estado;?>">
+                           No resuelta
+                        </a>
                             <?php }else{?>
-                            S/resolver
+                                <a class="btn btn-success" href="<?php echo base_url()."/cambio_estadoc/".$consulta->id."/".$consulta->estado;?>">
+                         Resolver
+                        </a>
                             <?php }?>
                         </td>
-
-                        <!--  <td>
-                            <a href="<?php // echo base_url().'/obtener_id/'.$consulta->id ?>"
-                                class="btn btn-warning btn-sm">Editar</a>
-                        </td>
-                       <td>
-                            <a href="<?php // echo base_url().'/eliminar/'.$consulta->id?>"
-                            class="btn btn-danger btn-sm">Eliminar</a>
-                        </td>-->
                     </tr>
                     <?php endforeach; ?>
                 </tbody>

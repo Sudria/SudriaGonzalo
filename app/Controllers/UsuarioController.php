@@ -44,7 +44,6 @@ class UsuarioController extends BaseController
         }
     }
 
-
     public function modificar()
     {
         $valid = $this->validate([
@@ -105,6 +104,9 @@ class UsuarioController extends BaseController
                     "rol" => $data[0]['rol'],
                     "telefono" => $data[0]['telefono'],
                     "id" => $data[0]['id'],
+                    "carrito" => array(
+                        5555 => 9999,
+                    ),
                 ];
 
                 $session = session();
@@ -137,4 +139,63 @@ class UsuarioController extends BaseController
             return redirect()->to(base_url() . '/tabla_usuarios')->with('mensaje', '5');
         }
     }
+
+
+    public function agregar_pcarrito($id)
+    {
+        $valid = $this->validate([
+            'cantidad' => 'required|min_length[1]|max_length[2]|is_natural_no_zero',
+        ]);
+
+        if ($valid) {
+            $cantidad = $this->request->getPost('cantidad');
+            $session = session();
+
+            $datos = [
+                $id => (int)$cantidad
+            ];
+
+            if(array_key_exists($id, $session->carrito)){
+                $session->carrito[$id] += $cantidad;
+            }
+            else{
+                $session->set('carrito', $datos);
+            }
+            return redirect()->to(base_url('/catalogo'));
+        } else {
+            $error = $this->validator->listErrors();
+            session()->setFlashdata('mensaje', $error);
+            return redirect()->to(base_url('/catalogo'));
+        }
+    }
+
+    public function eliminar_pcarrito($id)
+    {
+        $session = session();
+        $elem = $this->array_search_func($session->get('carrito'), function ($x) use (&$id) {
+            return $x['id'] === (int) $id;
+        });
+
+        if ($elem) {
+            $resultado = array(
+                "id" => null,
+                "cantidad" => null,
+            );
+            $session->carrito = array_replace($session->carrito, array($elem => $resultado));
+        }
+        $session->carrito = array_filter($session->carrito);
+        return redirect()->to(base_url('/prueba'));
+    }
+
+    public function vaciar_carrito()
+    {
+        $session = session();
+
+        $session->carrito = array(array(
+            "id" => null,
+            "cantidad" => null,
+        ));
+        return redirect()->to(base_url('/prueba'));
+    }
+
 }

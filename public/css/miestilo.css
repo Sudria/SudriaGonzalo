@@ -336,7 +336,7 @@
     justify-content: center;
 }
 
-#clasif {
+.selector {
     color: rgb(160, 88, 65);
     border-color: rgb(160, 88, 65);
     background-color: rgb(237, 237, 237);

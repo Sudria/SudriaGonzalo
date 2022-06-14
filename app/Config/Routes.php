@@ -60,6 +60,9 @@ $routes->post('/sudriagonzalo/public/login', 'UsuarioController::login');
 $routes->post('/sudriagonzalo/public/crear', 'UsuarioController::crear');
 $routes->post('/sudriagonzalo/public/modificar_usuario', 'UsuarioController::modificar');
 $routes->get('/sudriagonzalo/public/cambio_estadou/(:num)/(:num)', 'UsuarioController::cambioEstado/$1/$2');
+$routes->post('/sudriagonzalo/public/agregar_pcarrito/(:num)', 'UsuarioController::agregar_pcarrito/$1');
+$routes->get('/sudriagonzalo/public/eliminar_pcarrito/(:num)', 'UsuarioController::eliminar_pcarrito/$1');
+$routes->get('/sudriagonzalo/public/vaciar_carrito', 'UsuarioController::vaciar_carrito');
 
 
 
@@ -67,11 +70,18 @@ $routes->get('/sudriagonzalo/public/cambio_estadou/(:num)/(:num)', 'UsuarioContr
 $routes->post('/sudriagonzalo/public/create_producto', 'ProductoController::crear');
 $routes->post('/sudriagonzalo/public/modificar_producto', 'ProductoController::modificar');
 $routes->get('/sudriagonzalo/public/cambio_estadop/(:num)/(:num)', 'ProductoController::cambioEstado/$1/$2');
+$routes->get('/sudriagonzalo/public/agregar_producto', 'ProductoController::agregarProducto');
 
 
 
 //methods Consulta Controller
 $routes->post('/sudriagonzalo/public/create_consulta', 'ConsultaController::crear');
+$routes->get('/sudriagonzalo/public/cambio_estadoc/(:num)/(:num)', 'ConsultaController::cambioEstado/$1/$2');
+
+
+//methos Factura Controller 
+$routes->post('/sudriagonzalo/public/crear_factura', 'FacturaController::crear');
+
 
 
 /*

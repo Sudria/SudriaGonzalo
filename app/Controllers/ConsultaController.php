@@ -46,9 +46,9 @@ class ConsultaController extends BaseController
         $respuesta = $crud->deleteForId($id);
 
         if ($respuesta) {
-            return redirect()->to(base_url() . '/tabla_productos')->with('mensaje', '4');
+            return redirect()->to(base_url() . '/tabla_consultas')->with('mensaje', '4');
         } else {
-            return redirect()->to(base_url() . '/tabla_productos')->with('mensaje', '5');
+            return redirect()->to(base_url() . '/tabla_consultas')->with('mensaje', '5');
         }
     }
 
@@ -59,4 +59,15 @@ class ConsultaController extends BaseController
         $respuesta = $crud->update($datos);
     }
 
+    public function cambioEstado($id, $estado)
+    {
+        $crud = new ConsultaModel();
+        $respuesta = $crud->changeState($id, $estado);
+
+        if ($respuesta) {
+            return redirect()->to(base_url() . '/tabla_consultas')->with('mensaje', '4');
+        } else {
+            return redirect()->to(base_url() . '/tabla_consultas')->with('mensaje', '5');
+        }
+    }
 }

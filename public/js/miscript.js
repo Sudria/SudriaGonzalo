@@ -1,7 +1,9 @@
 let transformation = {
     all: (resolved) => true,
     not_resolved: (resolved) => !resolved,
-    resolved: (resolved) => resolved
+    resolved: (resolved) => resolved,
+    consulta: (resolved) => resolved,
+    contacto: (resolved) => !resolved,
 };
 
 function readURL(input) {
@@ -38,9 +40,19 @@ $('.image-upload-wrap').bind('dragleave', function() {
 });
 
 $(document).ready(function() {
-    $(".clasif").on("change", event => {
+    $("#clasif").on("change", event => {
         $(".myTable tr").each((idx, val) => {
             let estado = $(val).children(".estado").eq(0).attr("estado-value");
+            estado = Boolean(Number(estado))
+            $(val).toggle(transformation[event.target.value](estado));
+        })
+    });
+});
+
+$(document).ready(function() {
+    $("#consulta").on("change", event => {
+        $(".myTable tr").each((idx, val) => {
+            let estado = $(val).children(".user").eq(0).attr("user-value");
             estado = Boolean(Number(estado))
             $(val).toggle(transformation[event.target.value](estado));
         })

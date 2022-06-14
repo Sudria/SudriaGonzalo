@@ -88,19 +88,7 @@ class Home extends BaseController
         echo view('templates/footer');
     }
 
-    public function prueba (){
-        $crud = new ProductoModel();
-        $datos = $crud->readForId(8);
 
-        $data = [
-            'datos' => $datos,
-        ];  
-              
-        echo view('mains/editar_producto', $data);
-        echo view('templates/footer');
-
-        exit;
-    }
 
     public function login()
     {
@@ -157,4 +145,18 @@ class Home extends BaseController
         echo view('templates/footer');
     }
 
+
+    public function prueba (){
+     
+        $crud = new ProductoModel();
+        $datos = $crud->read();
+        $data = [
+            'datos' => $datos,
+        ];
+        echo view('templates/header');
+        echo view('mains/prueba',$data);
+        echo view('templates/footer');
+
+        exit;
+    }
 }
