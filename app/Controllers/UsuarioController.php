@@ -105,7 +105,6 @@ class UsuarioController extends BaseController
                     "telefono" => $data[0]['telefono'],
                     "id" => $data[0]['id'],
                     "carrito" => array(
-                        5555 => 9999,
                     ),
                 ];
 
@@ -140,50 +139,41 @@ class UsuarioController extends BaseController
         }
     }
 
-
     public function agregar_pcarrito($id)
     {
         $valid = $this->validate([
             'cantidad' => 'required|min_length[1]|max_length[2]|is_natural_no_zero',
         ]);
 
-        if ($valid) {
-            $cantidad = $this->request->getPost('cantidad');
-            $session = session();
-
-            $datos = [
-                $id => (int)$cantidad
-            ];
-
-            if(array_key_exists($id, $session->carrito)){
-                $session->carrito[$id] += $cantidad;
-            }
-            else{
-                $session->set('carrito', $datos);
-            }
-            return redirect()->to(base_url('/catalogo'));
-        } else {
+        if (!$valid) {
             $error = $this->validator->listErrors();
             session()->setFlashdata('mensaje', $error);
             return redirect()->to(base_url('/catalogo'));
         }
+        
+        $cantidad = $this->request->getPost('cantidad');
+        $session = session();
+        $datos = array(
+            $id => (int) $cantidad,
+        );
+
+        if (array_key_exists($id, $session->carrito)) {
+            $carrito = $session->carrito;
+            $carrito[$id] += $cantidad;
+            $session->carrito = $carrito;
+        } else {
+            $session->carrito += $datos;
+        }
+        return redirect()->to(base_url('/catalogo'));
+
     }
 
     public function eliminar_pcarrito($id)
     {
         $session = session();
-        $elem = $this->array_search_func($session->get('carrito'), function ($x) use (&$id) {
-            return $x['id'] === (int) $id;
-        });
-
-        if ($elem) {
-            $resultado = array(
-                "id" => null,
-                "cantidad" => null,
-            );
-            $session->carrito = array_replace($session->carrito, array($elem => $resultado));
-        }
-        $session->carrito = array_filter($session->carrito);
+        $carrito = $session->carrito;
+        unset($carrito[$id]);
+        $session->carrito = $carrito;
         return redirect()->to(base_url('/prueba'));
     }
 
@@ -191,10 +181,7 @@ class UsuarioController extends BaseController
     {
         $session = session();
 
-        $session->carrito = array(array(
-            "id" => null,
-            "cantidad" => null,
-        ));
+        $session->carrito = array();
         return redirect()->to(base_url('/prueba'));
     }
 

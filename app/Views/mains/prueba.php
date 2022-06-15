@@ -3,18 +3,6 @@
     <div class="container h-100 mt-5 fondo-gris py-5">
         <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col">
-
-
-
-                <script>
-                console.log(<?=json_encode(session('carrito'));?>)
-                console.log(<?=count(session('carrito'));?>)
-                console.log(<?php $array= array_values(session('carrito'));?>)
-                echo $array;
-                </script>
-
-
-
                 <div class="table-responsive">
                     <table class="table">
                         <thead>
@@ -42,17 +30,19 @@
                                 <td>
                                     <div class="d-flex flex-row">
                                         <input id="form1" min="1" name="quantity"
-                                            value="" type="number"
+                                            value="<?= session('carrito')[$producto->id]?>" type="number"
                                             class="form-control form-control-sm" style="width: 60px;" />
                                     </div>
                                 </td>
                                 <td>
-                                    <p class="mb-0 fw-bold"><?=$producto->precio?></p>
+                                  <p class="mb-0 fw-bold">$<?=$producto->precio?></p>
                                 </td>
                                 <td>
                                     <p class="mb-0 fw-bold">
-                                       </p>
-                                   
+                                        $<?= session('carrito')[$producto->id]* $producto->precio;?>
+                                        <?php $total = $total + session('carrito')[$producto->id]* $producto->precio;?>
+                                    </p>
+
                                 </td>
                                 <td>
                                     <a href="<?=base_url() . "/eliminar_pcarrito/" . $producto->id;?>"
@@ -69,7 +59,6 @@
 
                 <div class="card shadow-2-strong mb-5 mb-lg-0" style="border-radius: 16px;">
                     <div class="card-body p-4">
-
                         <div class="row">
                             <div class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-md-0">
                                 <form>
@@ -110,12 +99,12 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-md-4 col-lg-2 col-xl-4">
+                            <div class="col-md-4 col-lg-2 col-xl-5">
                                 <div class="row">
                                     <div class="col-12 col-xl-6">
                                         <div class="form-outline mb-4 mb-xl-5">
                                             <input type="text" id="typeName" class="form-control form-control-lg"
-                                                siez="17" placeholder="Nombre" />
+                                                placeholder="Nombre"  />
                                             <label class="form-label" for="typeName">Nombre de la tarjeta</label>
                                         </div>
 
@@ -127,7 +116,7 @@
                                     </div>
                                     <div class="col-12 col-xl-6">
                                         <div class="form-outline mb-4 mb-xl-5">
-                                            <input type="text" id="dsa" class="form-control form-control-lg" siez="17"
+                                            <input type="text" id="dsa" class="form-control form-control-lg" 
                                                 placeholder="1111 2222 3333 4444" minlength="19" maxlength="19" />
                                             <label class="form-label" for="dsa">Numero de la tarjeta</label>
                                         </div>
@@ -141,7 +130,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-xl-5">
+                            <div class="col-lg-6 col-xl-4">
                                 <div class="d-flex justify-content-between fw-bold">
                                     <p class="mb-2">Subtotal</p>
                                     <p class="mb-2"> $<?=$total?></p>
