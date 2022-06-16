@@ -35,7 +35,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                  <p class="mb-0 fw-bold">$<?=$producto->precio?></p>
+                                    <p class="mb-0 fw-bold">$<?=$producto->precio?></p>
                                 </td>
                                 <td>
                                     <p class="mb-0 fw-bold">
@@ -104,7 +104,7 @@
                                     <div class="col-12 col-xl-6">
                                         <div class="form-outline mb-4 mb-xl-5">
                                             <input type="text" id="typeName" class="form-control form-control-lg"
-                                                placeholder="Nombre"  />
+                                                placeholder="Nombre" />
                                             <label class="form-label" for="typeName">Nombre de la tarjeta</label>
                                         </div>
 
@@ -116,7 +116,7 @@
                                     </div>
                                     <div class="col-12 col-xl-6">
                                         <div class="form-outline mb-4 mb-xl-5">
-                                            <input type="text" id="dsa" class="form-control form-control-lg" 
+                                            <input type="text" id="dsa" class="form-control form-control-lg"
                                                 placeholder="1111 2222 3333 4444" minlength="19" maxlength="19" />
                                             <label class="form-label" for="dsa">Numero de la tarjeta</label>
                                         </div>
@@ -145,7 +145,7 @@
                                     <p class="mb-2">$<?=$total - $total * 0.1;?></p>
                                 </div>
 
-                                <a href="" type="button" class="m-1 btn btn-success btn-block ">
+                                <a href="<?=base_url() . '/comprar';?>" type="button" class="m-1 btn btn-success btn-block ">
                                     <div class="d-flex justify-content-between">
                                         <span class="me-2">Pagar</span>
                                         <span> $<?=$total - $total * 0.1;?></span>

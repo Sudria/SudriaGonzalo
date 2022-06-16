@@ -1,0 +1,280 @@
+CRITICAL - 2022-06-16 09:27:35 --> array_key_exists() expects parameter 2 to be array, null given
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\prueba.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_key_exist...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/prueba', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(157): view('mains/prueba', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->prueba()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-16 11:33:22 --> Trying to get property 'carrito' of non-object
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(192): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 192, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-16 11:34:20 --> Table 'espinnitas.facturas' doesn't exist
+CRITICAL - 2022-06-16 11:34:20 --> Table 'espinnitas.facturas' doesn't exist
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `fa...', 0)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fa...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fa...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fa...', Array, false)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Models\FacturaModel.php(17): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(199): App\Models\FacturaModel->create(Array)
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#8 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-16 11:35:48 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(200): CodeIgniter\Model->__call('getLastId', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-16 11:37:32 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(200): CodeIgniter\Model->__call('getLastId', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-16 11:39:21 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(200): CodeIgniter\Model->__call('getLastId', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-16 11:41:02 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(200): CodeIgniter\Model->__call('getLastId', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-16 11:41:58 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(200): CodeIgniter\Model->__call('getLastId', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-16 11:50:13 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(200): CodeIgniter\Model->__call('getLastId', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-16 11:53:00 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(200): CodeIgniter\Model->__call('getLastId', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-16 12:07:05 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(200): CodeIgniter\Model->__call('getLastId', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-16 12:08:15 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(200): CodeIgniter\Model->__call('getLastId', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-16 12:08:18 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(200): CodeIgniter\Model->__call('getLastId', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-16 12:09:44 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(200): CodeIgniter\Model->__call('getLastId', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-16 12:12:54 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-16 12:14:04 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-16 12:15:01 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-16 12:15:46 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-16 12:15:52 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-16 12:38:15 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(200): App\Models\FacturaModel->getLastId()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-16 12:39:14 --> Trying to access array offset on value of type int
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 205, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-16 12:39:36 --> Trying to access array offset on value of type int
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(205): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 205, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-16 12:41:47 --> syntax error, unexpected '}'
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-16 12:42:06 --> syntax error, unexpected '}'
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-16 12:44:39 --> Trying to access array offset on value of type int
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(206): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\xampp\\htdocs...', 206, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-16 12:45:44 --> Call to undefined function App\Controllers\getKeys()
+#0 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-16 12:47:16 --> key() expects parameter 1 to be array, int given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'key() expects p...', 'C:\\xampp\\htdocs...', 203, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(203): key(2)
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-16 12:50:53 --> Array to string conversion
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(203): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 203, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-16 12:52:04 --> key() expects parameter 1 to be array, int given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'key() expects p...', 'C:\\xampp\\htdocs...', 203, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(203): key(2)
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-16 12:52:54 --> key() expects parameter 1 to be array, int given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'key() expects p...', 'C:\\xampp\\htdocs...', 203, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(203): key(2)
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-16 16:43:59 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::getInsertID()
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(203): App\Models\FacturaModel->create(Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-16 16:44:22 --> Undefined variable: factura
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Models\FacturaModel.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(203): App\Models\FacturaModel->create(Array)
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-06-16 16:44:29 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getInsertID()
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(203): App\Models\FacturaModel->create(Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-16 16:44:42 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::insertID()
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\UsuarioController.php(203): App\Models\FacturaModel->create(Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-16 17:18:05 --> Call to undefined function App\Controllers\vaciar_carrito()
+#0 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\UsuarioController->comprar()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

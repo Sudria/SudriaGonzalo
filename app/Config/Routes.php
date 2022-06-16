@@ -79,8 +79,8 @@ $routes->post('/sudriagonzalo/public/create_consulta', 'ConsultaController::crea
 $routes->get('/sudriagonzalo/public/cambio_estadoc/(:num)/(:num)', 'ConsultaController::cambioEstado/$1/$2');
 
 
-//methos Factura Controller 
-$routes->post('/sudriagonzalo/public/crear_factura', 'FacturaController::crear');
+//methods Factura 
+$routes->get('/sudriagonzalo/public/comprar', 'UsuarioController::comprar');
 
 
 

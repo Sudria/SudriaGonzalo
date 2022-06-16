@@ -7,44 +7,33 @@ class FacturaModel extends Model
 
     public function read()
     {
-        $data = $this->db->query("SELECT * FROM productos");
+        $data = $this->db->query("SELECT * FROM facturas");
         return $data->getResult();
     }
 
     public function create($datos)
     {
-        $productos = $this->db->table('productos');
-        return $productos->insert($datos);
+        $facturas = $this->db->table('facturas');
+        $facturas->insert($datos);
+        return $this->db->insertID();
     }
-
-    public function changeState($id,$estado)
-    {
-        $tabla = $this->db->table('productos');
-        if($estado){
-            $tabla->set('estado', '0');
-        }else{
-            $tabla->set('estado', '1');
-        }
-        $tabla->where('id', $id);
-        return $tabla->update();
-    }
-
+   
     public function readForId($id)
     {
-        $datos = $this->db->query("SELECT * FROM `productos` WHERE id = $id");
+        $datos = $this->db->query("SELECT * FROM `facturas` WHERE id = $id");
         return $datos->getRow();
     }
 
     public function readForProducto($data)
     {
-        $Usuario = $this->db->table('productos');
+        $Usuario = $this->db->table('facturas');
         $Usuario->where($data);
         return $Usuario->get()->getResultArray();
     }
 
     public function toUpdate($id, $data)
     {
-        $tabla = $this->db->table('productos');
+        $tabla = $this->db->table('facturas');
         $tabla->set($data);
         $tabla->where('id', $id);
         return $tabla->update();

@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\DetalleModel;
+use App\Models\FacturaModel;
 use App\Models\UsuarioModel;
 
 class UsuarioController extends BaseController
@@ -150,7 +152,7 @@ class UsuarioController extends BaseController
             session()->setFlashdata('mensaje', $error);
             return redirect()->to(base_url('/catalogo'));
         }
-        
+
         $cantidad = $this->request->getPost('cantidad');
         $session = session();
         $datos = array(
@@ -180,7 +182,34 @@ class UsuarioController extends BaseController
     public function vaciar_carrito()
     {
         $session = session();
+        $session->carrito = array();
+        return redirect()->to(base_url('/prueba'));
+    }
 
+    public function comprar()
+    {
+        date_default_timezone_set("America/Argentina/Buenos_Aires");
+        $session = session();
+        $carrito = $session->carrito;
+        $fechaActual = date('Y-m-d H:i:s');
+        $factura = new FacturaModel();
+        $detalleFactura = new DetalleModel();
+
+        $datos = [
+            "idUsuario" => $session->id,
+            "fecha" => $fechaActual,
+        ];
+
+        $idFactura = $factura->create($datos);
+
+        foreach ($carrito as $id => $cantidad):
+            $detalle = [
+                "idFactura" => $idFactura,
+                "idProducto" => $id,
+                "cantidad" => $cantidad,
+            ];
+            $detalleFactura->create($detalle);
+        endforeach;
         $session->carrito = array();
         return redirect()->to(base_url('/prueba'));
     }

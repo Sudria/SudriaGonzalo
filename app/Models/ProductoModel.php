@@ -37,9 +37,9 @@ class ProductoModel extends Model
 
     public function readForProducto($data)
     {
-        $Usuario = $this->db->table('productos');
-        $Usuario->where($data);
-        return $Usuario->get()->getResultArray();
+        $usuario = $this->db->table('productos');
+        $usuario->where($data);
+        return $usuario->get()->getResultArray();
     }
 
     public function toUpdate($id, $data)
