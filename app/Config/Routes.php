@@ -43,13 +43,16 @@ $routes->get('/sudriagonzalo/public/ingresar', 'Home::login');
 $routes->get('/sudriagonzalo/public/catalogo', 'Home::catalogo');
 $routes->get('/sudriagonzalo/public/tabla_consultas', 'Home::lista_consultas');
 $routes->get('/sudriagonzalo/public/tabla_productos', 'Home::lista_productos');
+$routes->get('/sudriagonzalo/public/detalles/(:num)', 'Home::detalles/$1');
+$routes->get('/sudriagonzalo/public/tabla_facturas', 'Home::compras');
 
 $routes->get('/sudriagonzalo/public/editar_usuario/(:num)', 'Home::editar_usuario/$1');
 $routes->get('/sudriagonzalo/public/editar_producto/(:num)', 'Home::editar_producto/$1');
+$routes->get('/sudriagonzalo/public/carrito', 'Home::carrito');
+$routes->get('/sudriagonzalo/public/usuario_deshabilitado', 'Home::usuario_deshabilitado');
 
-
-//pruebas
-$routes->get('/sudriagonzalo/public/prueba', 'Home::prueba');
+$routes->get('/sudriagonzalo/public/facturas/(:num)', 'Home::facturas/$1');
+$routes->get('/sudriagonzalo/public/mis_compras', 'Home::mis_compras');
 
 
 

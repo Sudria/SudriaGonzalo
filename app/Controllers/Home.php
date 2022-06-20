@@ -5,6 +5,8 @@ namespace App\Controllers;
 use App\Models\ConsultaModel;
 use App\Models\ProductoModel;
 use App\Models\UsuarioModel;
+use App\Models\FacturaModel;
+use App\Models\DetalleModel;
 
 class Home extends BaseController
 {
@@ -89,7 +91,6 @@ class Home extends BaseController
     }
 
 
-
     public function login()
     {
         echo view('templates/header');
@@ -97,6 +98,7 @@ class Home extends BaseController
         echo view('templates/footer');
     }
 
+    
     public function catalogo()
     {
         $crud = new ProductoModel();
@@ -146,17 +148,86 @@ class Home extends BaseController
     }
 
 
-    public function prueba (){
-     
+    public function carrito (){
         $crud = new ProductoModel();
         $datos = $crud->read();
         $data = [
             'datos' => $datos,
         ];
         echo view('templates/header');
-        echo view('mains/prueba',$data);
+        echo view('mains/carrito',$data);
         echo view('templates/footer');
+    }
 
-        exit;
+
+    public function usuario_deshabilitado (){
+        echo view('templates/header');
+        echo view('templates/usuario_deshabilitado');
+        echo view('templates/footer');
+    }
+
+    public function detalles($id){
+        $crud = new ProductoModel();
+        $datos = $crud->readForId($id);
+        $data = [
+            'datos' => $datos,
+        ];
+        echo view('templates/header');
+        echo view('mains/detalles',$data);
+        echo view('templates/footer');
+    }
+
+    public function compras(){
+        $crudFactura = new FacturaModel();
+        $facturas = $crudFactura->read();
+        $crudUsuario = new UsuarioModel();
+        $usuarios = $crudUsuario->readKeyCamps();
+
+        $data = [
+            'facturas' => $facturas,
+            'usuarios' => $usuarios,
+        ];
+        echo view('templates/header');
+        echo view('mains/lista_facturas',$data);
+        echo view('templates/footer');
+    }
+
+    public function facturas($idFactura){
+        $crudDetalle = new DetalleModel();
+        $detalles = $crudDetalle->readForId($idFactura);
+
+        $crudProducto = new ProductoModel();
+        $productos = $crudProducto->read();
+
+        $crudFactura = new FacturaModel();
+        $factura = $crudFactura->readForId($idFactura);
+
+        $crudUsuario = new UsuarioModel();
+        $usuario = $crudUsuario->readForIdFactura($factura->idUsuario);
+
+        $data = [
+            'detalles' => $detalles,
+            'productos' => $productos,
+            'factura' => $factura,
+            'usuario' => $usuario,
+        ];
+        echo view('templates/header');
+        echo view('mains/facturas', $data);
+        echo view('templates/footer');
+    }
+
+    public function mis_compras(){
+
+        $session = session();
+        $crudFactura = new FacturaModel();
+        $facturas = $crudFactura->readForIdUsuario($session->id);
+
+
+        $data = [
+            'facturas' => $facturas,
+        ];
+        echo view('templates/header');
+        echo view('mains/mis_compras', $data);
+        echo view('templates/footer');
     }
 }

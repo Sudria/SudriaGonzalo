@@ -24,19 +24,17 @@ class FacturaModel extends Model
         return $datos->getRow();
     }
 
-    public function readForProducto($data)
+
+    public function readForIdUsuario($id)
     {
-        $Usuario = $this->db->table('facturas');
-        $Usuario->where($data);
-        return $Usuario->get()->getResultArray();
+        $datos = $this->db->query("SELECT * FROM `facturas` WHERE idUsuario = $id");
+        return $datos->getResult();
     }
 
-    public function toUpdate($id, $data)
-    {
-        $tabla = $this->db->table('facturas');
-        $tabla->set($data);
-        $tabla->where('id', $id);
-        return $tabla->update();
-    }
+
+
+ 
+
+
 
 }

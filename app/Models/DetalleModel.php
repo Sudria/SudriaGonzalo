@@ -17,26 +17,10 @@ class DetalleModel extends Model
         return $detalles->insert($datos);
     }
 
-
     public function readForId($id)
     {
-        $datos = $this->db->query("SELECT * FROM `detalles` WHERE id = $id");
-        return $datos->getRow();
-    }
-
-    public function readForProducto($data)
-    {
-        $usuario = $this->db->table('detalles');
-        $usuario->where($data);
-        return $usuario->get()->getResultArray();
-    }
-
-    public function toUpdate($id, $data)
-    {
-        $tabla = $this->db->table('detalles');
-        $tabla->set($data);
-        $tabla->where('id', $id);
-        return $tabla->update();
+        $data = $this->db->query("SELECT * FROM `detalles` WHERE `idFactura` = $id");
+        return $data->getResult();
     }
 
 }

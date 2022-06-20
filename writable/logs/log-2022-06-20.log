@@ -1,0 +1,816 @@
+CRITICAL - 2022-06-20 10:53:01 --> Class 'App\Controllers\FacturaModel' not found
+#0 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-20 10:53:20 --> Class 'App\Controllers\FacturaModel' not found
+#0 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-20 10:53:49 --> Class 'App\Controllers\FacturaModel' not found
+#0 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-20 10:55:08 --> Undefined property: stdClass::$titulo
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 41, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(187): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 10:55:48 --> Undefined property: stdClass::$estado
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 45, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(187): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:01:00 --> Function name must be a string
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(187): view('mains/compras', Array)
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-20 11:11:19 --> Undefined variable: crud
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(182): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 182, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-20 11:12:09 --> Undefined variable: facturas
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(187): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:12:20 --> Undefined variable: facturas
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(187): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:14:15 --> Undefined variable: datos
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(190): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:16:01 --> Undefined variable: usuario
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:19:23 --> Undefined variable: usuario
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:24:31 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-20 11:24:40 --> Undefined index: id
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:24:49 --> syntax error, unexpected '?>'
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-20 11:25:15 --> syntax error, unexpected '[', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-20 11:25:22 --> Array to string conversion
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:25:34 --> Call to a member function get() on array
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-20 11:25:56 --> key_exists() expects parameter 2 to be array, int given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'key_exists() ex...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(22): key_exists(Array, 15)
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#5 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-06-20 11:27:10 --> Array to string conversion
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:28:40 --> Trying to get property 'id' of non-object
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:30:24 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-20 11:30:34 --> Undefined index: id
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:32:38 --> Undefined property: stdClass::$id
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:32:48 --> Undefined property: stdClass::$id
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:33:20 --> Undefined property: stdClass::$nombre
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 25, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:35:55 --> array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'array_key_exist...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:36:00 --> array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'array_key_exist...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:36:07 --> array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'array_key_exist...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:36:21 --> Use of undefined constant dni - assumed 'dni' (this will throw an Error in a future version of PHP)
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:36:25 --> array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'array_key_exist...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:37:54 --> array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'array_key_exist...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:38:57 --> Call to a member function count() on array
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-20 11:39:07 --> Call to undefined method stdClass::count()
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-20 11:39:15 --> Object of class stdClass could not be converted to string
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-20 11:39:46 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-20 11:39:51 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-20 11:40:06 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-20 11:40:14 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-20 11:40:16 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-20 11:40:20 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-06-20 11:40:33 --> Undefined index: dni
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:40:33 --> Undefined index: dni
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:40:39 --> Array to string conversion
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 11:43:53 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH)
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-20 11:44:15 --> Undefined property: stdClass::$id_usuario
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\compras.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/compras', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(191): view('mains/compras', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 12:00:54 --> Undefined variable: crudFactura
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(197): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 197, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-20 12:02:00 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(197): CodeIgniter\Model->__call('readForId', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-20 12:04:43 --> Undefined variable: produsctos
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(203): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 203, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-20 12:04:54 --> Undefined variable: datos
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\detalles.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 5, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/detalles', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(207): view('mains/detalles', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 13:01:31 --> Undefined variable: detalle
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\facturas.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 56, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/facturas', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(207): view('mains/facturas', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 13:02:12 --> Undefined offset: 0
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\facturas.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 56, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/facturas', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(207): view('mains/facturas', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 13:02:37 --> Undefined variable: detalle
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\facturas.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/facturas', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(207): view('mains/facturas', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 13:02:42 --> Undefined variable: detalle
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\facturas.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 17, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/facturas', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(207): view('mains/facturas', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 13:07:25 --> Undefined property: stdClass::$titulo
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\facturas.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/facturas', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(208): view('mains/facturas', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 13:13:25 --> Undefined variable: prodcto
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\facturas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 66, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/facturas', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(208): view('mains/facturas', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 13:14:10 --> Undefined variable: prodcto
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\facturas.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/facturas', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(208): view('mains/facturas', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 13:14:20 --> Undefined variable: prodcto
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\facturas.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/facturas', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(208): view('mains/facturas', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 13:14:57 --> Undefined variable: total
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\facturas.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/facturas', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(208): view('mains/facturas', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 13:15:15 --> Undefined variable: total
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\facturas.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/facturas', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(208): view('mains/facturas', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 13:15:37 --> Undefined variable: total
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\facturas.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/facturas', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(208): view('mains/facturas', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 13:15:41 --> Undefined variable: total
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\facturas.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/facturas', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(208): view('mains/facturas', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 13:16:29 --> Undefined variable: total
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\facturas.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/facturas', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(208): view('mains/facturas', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 13:16:41 --> Undefined variable: total
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\facturas.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/facturas', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(208): view('mains/facturas', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 13:31:22 --> Undefined property: stdClass::$id_usuario
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(206): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 206, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-20 13:33:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM usuarios' at line 1
+CRITICAL - 2022-06-20 13:33:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM usuarios' at line 1
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT  `id`, `...', 0)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT  `id`, `...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT  `id`, `...')
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Models\UsuarioModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT  `id`, `...')
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(206): App\Models\UsuarioModel->readKeyCamps('34')
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 13:42:22 --> syntax error, unexpected '}', expecting end of file
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('templates/heade...', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(190): view('templates/heade...')
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->compras()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-20 13:50:53 --> Undefined variable: idFactura
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(221): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 221, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->mis_compras()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-20 13:51:14 --> Undefined variable: idFactura
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(221): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 221, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->mis_compras()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-20 13:51:27 --> Too few arguments to function App\Models\DetalleModel::readForId(), 0 passed in C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php on line 221 and exactly 1 expected
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(221): App\Models\DetalleModel->readForId()
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->mis_compras()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-20 13:51:32 --> Undefined variable: idFactura
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(227): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 227, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->mis_compras()
+#2 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-20 13:55:12 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(223): CodeIgniter\Model->__call('readForIdUsuari...', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->mis_compras()
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-20 14:04:58 --> Invalid file: mains/facturas.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/facturas....')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/facturas', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(215): view('mains/facturas', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-20 14:05:16 --> Invalid file: mains/facturas.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/facturas....')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/facturas', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(215): view('mains/facturas', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-20 14:05:22 --> Invalid file: mains/facturas.php
+#0 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mains/facturas....')
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/facturas', Array, true)
+#2 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(215): view('mains/facturas', Array)
+#3 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->facturas('71')
+#4 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-06-20 16:16:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+CRITICAL - 2022-06-20 16:16:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+#0 C:\xampp\htdocs\SudriaGonzalo\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM `...', 0)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM `...')
+#3 C:\xampp\htdocs\SudriaGonzalo\app\Models\FacturaModel.php(30): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...')
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(223): App\Models\FacturaModel->readForIdUsuario(NULL)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->mis_compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 16:16:50 --> Trying to get property 'id' of non-object
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\mis_compras.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/mis_compr...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(230): view('mains/mis_compr...', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->mis_compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 16:20:16 --> Undefined variable: facturas
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\mis_compras.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 23, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/mis_compr...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(230): view('mains/mis_compr...', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->mis_compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 16:20:33 --> Undefined variable: usuario
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\mis_compras.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/mis_compr...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(230): view('mains/mis_compr...', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->mis_compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 16:20:48 --> Undefined variable: usuario
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\mis_compras.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 26, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/mis_compr...', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(230): view('mains/mis_compr...', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->mis_compras()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-20 16:30:24 --> array_key_exists() expects parameter 2 to be array, null given
+#0 C:\xampp\htdocs\SudriaGonzalo\app\Views\mains\carrito.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_key_exist...', 'C:\\xampp\\htdocs...', 18, Array)
+#1 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\SudriaGonzalo\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\SudriaGonzalo\system\Common.php(1089): CodeIgniter\View\View->render('mains/carrito', Array, true)
+#4 C:\xampp\htdocs\SudriaGonzalo\app\Controllers\Home.php(158): view('mains/carrito', Array)
+#5 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(832): App\Controllers\Home->carrito()
+#6 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\SudriaGonzalo\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SudriaGonzalo\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

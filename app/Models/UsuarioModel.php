@@ -10,6 +10,11 @@ class UsuarioModel extends Model
         $data = $this->db->query("SELECT * FROM usuarios");
         return $data->getResult();
     }
+    public function readKeyCamps()
+    {
+        $data = $this->db->query("SELECT  `id`, `usuario`, `dni`,`telefono`,`direccion`,`apellido`,`nombre` FROM usuarios");
+        return $data->getResult();
+    }
 
     public function create($datos)
     {
@@ -32,6 +37,12 @@ class UsuarioModel extends Model
     public function readForId($id)
     {
         $datos = $this->db->query("SELECT * FROM `usuarios` WHERE id = $id");
+        return $datos->getRow();
+    }
+
+    public function readForIdFactura($id)
+    {
+        $datos = $this->db->query("SELECT  `id`, `usuario`, `dni`,`telefono`,`direccion`,`apellido`,`nombre` FROM `usuarios` WHERE id = $id");
         return $datos->getRow();
     }
 

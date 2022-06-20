@@ -2,6 +2,7 @@
     <div class="row fondo-gris py-5 mt-5 ">
         <!-- Card de los productos -->
         <?php foreach ($datos as $producto): ?>
+        <?php  if ($producto->estado == 1  ){ ?>
         <div class="col-3">
             <div class="card product-card mx-auto my-3">
                 <img src="./img/productos/<?php echo $producto->imagen ?>"
@@ -14,7 +15,8 @@
                     </ul>
                     </p>
                     <div class="text-center mt-3">
-                        <a href="#" class="btn boton-marron ">Ver detalles</a>
+
+                        <a href="<?= base_url()."/detalles/".$producto->id ?>" class="btn boton-marron ">Ver detalles</a>
 
                         <!-- Button trigger modal -->
                         <?php if (session('rol') != null) {?>
@@ -38,7 +40,7 @@
                                         <div class="container-fluid">
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <img src="./img/productos/<?= $producto->imagen ?>"
+                                                    <img src="./img/productos/<?=$producto->imagen?>"
                                                         class="img-fluid w-100" style="height: 14rem; " alt="...">
                                                 </div>
                                                 <div class="col-6">
@@ -63,7 +65,7 @@
                                         <form method="POST"
                                             action="<?php echo base_url() . "/agregar_pcarrito/".$producto->id; ?>">
                                             Cantidad: <input id="cantidad" name="cantidad" class="text-center"
-                                                type="number" style="width:30%" min="1" max="99" value="1">
+                                                type="number" style="width:30%" min="1" max="<?php echo $producto->stock ?>" value="1">
                                             <button type="submit" class="btn boton-marron">Agregar</button>
                                         </form>
                                     </div>
@@ -75,6 +77,7 @@
                 </div>
             </div>
         </div>
+        <?php }?>
         <?php endforeach;?>
     </div>
 </div>

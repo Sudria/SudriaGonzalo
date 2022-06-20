@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 14, 2022 at 09:53 PM
+-- Generation Time: Jun 20, 2022 at 11:45 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -56,22 +56,56 @@ INSERT INTO `consultas` (`nombre`, `apellido`, `id`, `usuarioId`, `mensaje`, `em
 --
 
 CREATE TABLE `detalles` (
-  `id` int(10) NOT NULL,
-  `id_producto` int(10) NOT NULL,
-  `cantidad` int(2) NOT NULL
+  `idProducto` int(10) NOT NULL,
+  `idFactura` int(10) NOT NULL,
+  `cantidad` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `detalles`
+--
+
+INSERT INTO `detalles` (`idProducto`, `idFactura`, `cantidad`) VALUES
+(8, 71, 1),
+(8, 72, 1),
+(8, 73, 1),
+(8, 74, 1),
+(8, 75, 2),
+(9, 74, 1),
+(9, 75, 2),
+(10, 71, 2),
+(10, 72, 2),
+(10, 73, 2),
+(10, 74, 1),
+(10, 75, 1),
+(11, 75, 1),
+(12, 71, 1),
+(12, 72, 1),
+(12, 73, 1),
+(12, 75, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `factura`
+-- Table structure for table `facturas`
 --
 
-CREATE TABLE `factura` (
+CREATE TABLE `facturas` (
   `id` int(10) NOT NULL,
-  `id_usuario` int(10) NOT NULL,
-  `id_detalle` int(10) NOT NULL
+  `idUsuario` int(10) NOT NULL,
+  `fecha` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `facturas`
+--
+
+INSERT INTO `facturas` (`id`, `idUsuario`, `fecha`) VALUES
+(71, 34, '2022-06-16 16:48:03'),
+(72, 34, '2022-06-16 17:18:05'),
+(73, 34, '2022-06-16 17:19:03'),
+(74, 37, '2022-06-20 13:45:00'),
+(75, 39, '2022-06-20 18:43:06');
 
 -- --------------------------------------------------------
 
@@ -129,7 +163,9 @@ INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `direccion`, `telefono`, 
 ('Gonzalo', 'Sudria', 'sudria.gonzalo@gmail.com', 'misiones 1387', '0379440369', 'bimbitou', '40049564', '$2y$10$lLykaIb8woF3zJl1onb4S.u1hIPm9hIizttWYOkdoHF6Qf8PgLWE6', 34, 1, 1),
 ('Tincho', 'Marti', 'tincho@gmail.co', 'asdasdas 138', '011123456', 'tinch', '4004956', '$2y$10$l6y4x7/7a22nScqHX6OJ2OZEW2eljXrMnSIUt0jyGhCTDdKUrOfOy', 35, 0, 1),
 ('jose', 'prueba', 'akjsndjas@asdas.com', 'misiones 1387', '0379440369', 'joseig', '40049563', '$2y$10$9o8cgHHeEe2flGoJhXr32OPK6BulhJ/o/YsfMlq162O7APFPKrZBC', 36, 0, 1),
-('admin', 'admin', 'admin@admin.com', 'admin admin', '0379440369', 'admin', '54548948', '$2y$10$LXJseYvhxsA//7.J48vvNOLi.8WQ6AoxmJCI8bxLqh8WSzAoT7Bcq', 37, 1, 1);
+('admin', 'admin', 'admin@admin.com', 'admin admin', '0379440369', 'admin', '54548948', '$2y$10$LXJseYvhxsA//7.J48vvNOLi.8WQ6AoxmJCI8bxLqh8WSzAoT7Bcq', 37, 1, 1),
+('Gonzalo', 'cattaneo', 'sudria@gmail.com', 'misiones 1387', '0379440369', 'bimbi', '54645214', '$2y$10$PnmaymDk1x4.sT4dtNQFiOXofeM1kdgLPx2wh8Ft15uTZNY91Wnbm', 38, 0, 0),
+('jose', 'cattaneo', 'asdasd@gmail.com', 'asdasd asdasd', '0379440369', 'asdasdasd', '40049569', '$2y$10$zz53Ba5xHYL0w/hpitD8Fergf8BDBVeLah36m37FJbj6rdCV2lfma', 39, 0, 1);
 
 --
 -- Indexes for dumped tables
@@ -145,13 +181,15 @@ ALTER TABLE `consultas`
 -- Indexes for table `detalles`
 --
 ALTER TABLE `detalles`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`idProducto`,`idFactura`),
+  ADD KEY `idFactura` (`idFactura`);
 
 --
--- Indexes for table `factura`
+-- Indexes for table `facturas`
 --
-ALTER TABLE `factura`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `facturas`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idUsuario` (`idUsuario`);
 
 --
 -- Indexes for table `productos`
@@ -176,28 +214,39 @@ ALTER TABLE `consultas`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `detalles`
+-- AUTO_INCREMENT for table `facturas`
 --
-ALTER TABLE `detalles`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `factura`
---
-ALTER TABLE `factura`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `facturas`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 
 --
 -- AUTO_INCREMENT for table `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `detalles`
+--
+ALTER TABLE `detalles`
+  ADD CONSTRAINT `detalles_ibfk_1` FOREIGN KEY (`idFactura`) REFERENCES `facturas` (`id`),
+  ADD CONSTRAINT `detalles_ibfk_2` FOREIGN KEY (`idProducto`) REFERENCES `productos` (`id`);
+
+--
+-- Constraints for table `facturas`
+--
+ALTER TABLE `facturas`
+  ADD CONSTRAINT `facturas_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

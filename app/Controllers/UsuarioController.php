@@ -97,23 +97,25 @@ class UsuarioController extends BaseController
             $data = $crud->readForUsuario(['usuario' => $usuario]);
 
             if (count($data) > 0 && password_verify($contra, $data[0]['contra'])) {
+                if ($data[0]['estado']) {
+                    $datosUsuario = [
+                        "usuario" => $data[0]['usuario'],
+                        "nombre" => $data[0]['nombre'],
+                        "apellido" => $data[0]['apellido'],
+                        "email" => $data[0]['email'],
+                        "rol" => $data[0]['rol'],
+                        "telefono" => $data[0]['telefono'],
+                        "id" => $data[0]['id'],
+                        "carrito" => array(
+                        ),
+                    ];
+                    $session = session();
+                    $session->set($datosUsuario);
+                    return redirect()->to(base_url() . '/');
+                }else{
+                   return redirect()->to(base_url() . '/usuario_deshabilitado');
+                }
 
-                $datosUsuario = [
-                    "usuario" => $data[0]['usuario'],
-                    "nombre" => $data[0]['nombre'],
-                    "apellido" => $data[0]['apellido'],
-                    "email" => $data[0]['email'],
-                    "rol" => $data[0]['rol'],
-                    "telefono" => $data[0]['telefono'],
-                    "id" => $data[0]['id'],
-                    "carrito" => array(
-                    ),
-                ];
-
-                $session = session();
-                $session->set($datosUsuario);
-
-                return redirect()->to(base_url() . '/');
             } else {
                 return redirect()->to(base_url() . '/ingresar');
             }
@@ -176,14 +178,14 @@ class UsuarioController extends BaseController
         $carrito = $session->carrito;
         unset($carrito[$id]);
         $session->carrito = $carrito;
-        return redirect()->to(base_url('/prueba'));
+        return redirect()->to(base_url('/carrito'));
     }
 
     public function vaciar_carrito()
     {
         $session = session();
         $session->carrito = array();
-        return redirect()->to(base_url('/prueba'));
+        return redirect()->to(base_url('/carrito'));
     }
 
     public function comprar()
@@ -211,7 +213,7 @@ class UsuarioController extends BaseController
             $detalleFactura->create($detalle);
         endforeach;
         $session->carrito = array();
-        return redirect()->to(base_url('/prueba'));
+        return redirect()->to(base_url('/carrito'));
     }
 
 }

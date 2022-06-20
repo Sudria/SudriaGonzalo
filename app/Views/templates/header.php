@@ -42,44 +42,51 @@
                         </li>
                     </ul>
 
-                <?php if(session('rol')!=null){ ?>
+                    <?php if(session('rol')==0 && session('rol') !=null){?>
+                    <a href="<?= base_url()."/carrito";?>" class="btn boton-gris"><i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                        <?php }?>
 
-                   <a href="<?= base_url()."/prueba";?>" class="btn boton-gris"><i class="fa-solid fa-cart-shopping"></i></a> 
-                <div class="dropdown  justify-content-center text-center">
-                    <button class="btn boton-gris dropdown-toggle m-2" type="button" id="usuarioMenu"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <?php echo session('nombre') ?>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><a href="<?php echo base_url()."/editar_usuario/".session('id');?>" class="text-decoration-none"><button
-                                    class="dropdown-item" type="button">Configuracion </button></a></li>
+                    <?php if(session('rol')!=null){ ?>
+                    <div class="dropdown  justify-content-center text-center">
+                        <button class="btn boton-gris dropdown-toggle m-2" type="button" id="usuarioMenu"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <?php echo session('nombre') ?>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
 
-                        <?php if(session('rol') == 1){ ?>
-                        <li><a href="<?php echo base_url();?>/tabla_usuarios" class="text-decoration-none"><button
-                                    class="dropdown-item" type="button">Usuarios </button></a></li>
-                        <li><a href="<?php echo base_url();?>/tabla_productos" class="text-decoration-none"><button
-                                    class="dropdown-item" type="button">Productos </button></a></li>
-                        <li><a href="<?php echo base_url();?>/tabla_consultas" class="text-decoration-none"><button
-                                    class="dropdown-item" type="button">Consultas </button></a></li>
-                        <?php } ?>
+                            <?php if(session('rol')==0){?>
+
+                            <li><a href="<?php echo base_url()."/mis_compras";?>" class="text-decoration-none"><button
+                                        class="dropdown-item" type="button">Mis compras </button></a></li>
+                            <li><a href="<?php echo base_url()."/editar_usuario/".session('id');?>"
+                                    class="text-decoration-none"><button class="dropdown-item"
+                                        type="button">Configuracion </button></a></li>
+                            <?php }?>
+                            <?php if(session('rol') == 1){ ?>
+                            <li><a href="<?php echo base_url()."/tabla_facturas";?>"
+                                    class="text-decoration-none"><button class="dropdown-item" type="button">Facturas
+                                    </button></a></li>
+                            <li><a href="<?php echo base_url();?>/tabla_usuarios" class="text-decoration-none"><button
+                                        class="dropdown-item" type="button">Usuarios </button></a></li>
+                            <li><a href="<?php echo base_url();?>/tabla_productos" class="text-decoration-none"><button
+                                        class="dropdown-item" type="button">Productos </button></a></li>
+                            <li><a href="<?php echo base_url();?>/tabla_consultas" class="text-decoration-none"><button
+                                        class="dropdown-item" type="button">Consultas </button></a></li>
+                            <?php } ?>
+
+                    </div>
+                    <a class="btn boton-gris" href="<?php echo base_url();?>/logout">Cerrar sesion</a>
+                    <?php }?>
+
+                    <?php if (session('rol') ==null){ ?>
+
+                    <a class="btn boton-gris m-2" href="<?php  echo base_url();?>/ingresar">Iniciar Sesion</a>
+
+                    <a class="btn boton-gris" href="<?php echo base_url();?>/crear_usuario">Registrarse</a>
+                    <?php } ?>
 
                 </div>
-                <a class="btn boton-gris" href="<?php echo base_url();?>/logout">Cerrar sesion</a>
-                <?php }?>
-
-                <?php if (session('rol') ==null){ ?>
-
-                <a class="btn boton-gris m-2" href="<?php  echo base_url();?>/ingresar">Iniciar Sesion</a>
-
-                <a class="btn boton-gris" href="<?php echo base_url();?>/crear_usuario">Registrarse</a>
-                <?php } ?>
-                <!-- <form class="d-flex">
-                        <input class="form-control me-2" id="input-buscar" type="search" placeholder="Buscar"
-                            aria-label="Buscar">
-                        <button class="btn boton-gris" type="submit">Buscar</button>
-                    </form> -->
-
-            </div>
             </div>
         </nav>
     </header>
