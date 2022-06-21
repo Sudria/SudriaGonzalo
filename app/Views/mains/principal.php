@@ -17,7 +17,6 @@
             <div class="card my-5 borde-marron">
                 <h5 class="py-5 text-center texto-base fs-4">Suculentas</h5>
                 <img src="img/principal/suculenta.jpg" class="card-img-top " alt="suculenta">
-                <button class="boton-marron ">Ver mas</button>
 
             </div>
         </div>
@@ -25,7 +24,6 @@
             <div class="card my-5 borde-marron">
                 <h5 class="py-5 text-center texto-base fs-4">Cactus</h5>
                 <img src="img/principal/cactus.jpg" class="card-img-top" alt="cactus">
-                <button class=" boton-marron">Ver mas</button>
 
             </div>
         </div>
@@ -33,7 +31,6 @@
             <div class="card my-5 borde-marron">
                 <h5 class="py-5 text-center texto-base fs-4">Plantas</h5>
                 <img src="img/principal/planta.jpg" class="card-img-top" alt="planta">
-                <button class=" boton-marron">Ver mas</button>
 
             </div>
         </div>

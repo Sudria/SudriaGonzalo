@@ -15,9 +15,8 @@
                     </ul>
                     </p>
                     <div class="text-center mt-3">
-
-                        <a href="<?= base_url()."/detalles/".$producto->id ?>" class="btn boton-marron ">Ver detalles</a>
-
+                        <a href="<?= base_url()."/detalles/".$producto->id ?>" class="btn boton-marron ">Ver
+                            detalles</a>
                         <!-- Button trigger modal -->
                         <?php if (session('rol') != null) {?>
                         <button type="button" class="btn boton-marron" data-bs-toggle="modal"
@@ -65,7 +64,8 @@
                                         <form method="POST"
                                             action="<?php echo base_url() . "/agregar_pcarrito/".$producto->id; ?>">
                                             Cantidad: <input id="cantidad" name="cantidad" class="text-center"
-                                                type="number" style="width:30%" min="1" max="<?php echo $producto->stock ?>" value="1">
+                                                type="number" style="width:30%" min="1"
+                                                max="<?php echo $producto->stock ?>" value="1">
                                             <button type="submit" class="btn boton-marron">Agregar</button>
                                         </form>
                                     </div>
