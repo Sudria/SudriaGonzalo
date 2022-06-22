@@ -18,7 +18,7 @@
                         <a href="<?= base_url()."/detalles/".$producto->id ?>" class="btn boton-marron ">Ver
                             detalles</a>
                         <!-- Button trigger modal -->
-                        <?php if (session('rol') != null) {?>
+                        <?php if (session('rol') != null && session('rol') == 0){?>
                         <button type="button" class="btn boton-marron" data-bs-toggle="modal"
                             data-bs-target="#mimodal<?php echo "$producto->id" ?>">
                             <i class="fa-solid fa-cart-plus"></i>

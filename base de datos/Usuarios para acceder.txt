@@ -1,0 +1,7 @@
+Usuario administrador: 
+usuario: admin
+contraseña: admin
+
+Usuario normal:
+usuario: usuario
+contraseña: usuario

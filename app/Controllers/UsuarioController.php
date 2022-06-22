@@ -112,8 +112,8 @@ class UsuarioController extends BaseController
                     $session = session();
                     $session->set($datosUsuario);
                     return redirect()->to(base_url() . '/');
-                }else{
-                   return redirect()->to(base_url() . '/usuario_deshabilitado');
+                } else {
+                    return redirect()->to(base_url() . '/usuario_deshabilitado');
                 }
 
             } else {
@@ -193,27 +193,31 @@ class UsuarioController extends BaseController
         date_default_timezone_set("America/Argentina/Buenos_Aires");
         $session = session();
         $carrito = $session->carrito;
-        $fechaActual = date('Y-m-d H:i:s');
-        $factura = new FacturaModel();
-        $detalleFactura = new DetalleModel();
+        if (count($carrito) != 0) {
+            $fechaActual = date('Y-m-d H:i:s');
+            $factura = new FacturaModel();
+            $detalleFactura = new DetalleModel();
 
-        $datos = [
-            "idUsuario" => $session->id,
-            "fecha" => $fechaActual,
-        ];
-
-        $idFactura = $factura->create($datos);
-
-        foreach ($carrito as $id => $cantidad):
-            $detalle = [
-                "idFactura" => $idFactura,
-                "idProducto" => $id,
-                "cantidad" => $cantidad,
+            $datos = [
+                "idUsuario" => $session->id,
+                "fecha" => $fechaActual,
             ];
-            $detalleFactura->create($detalle);
-        endforeach;
-        $session->carrito = array();
-        return redirect()->to(base_url('/carrito'));
+
+            $idFactura = $factura->create($datos);
+
+            foreach ($carrito as $id => $cantidad):
+                $detalle = [
+                    "idFactura" => $idFactura,
+                    "idProducto" => $id,
+                    "cantidad" => $cantidad,
+                ];
+                $detalleFactura->create($detalle);
+            endforeach;
+            $session->carrito = array();
+            return redirect()->to(base_url('/carrito'));
+        } else {
+            return redirect()->to(base_url('/carrito'));
+        }
     }
 
 }

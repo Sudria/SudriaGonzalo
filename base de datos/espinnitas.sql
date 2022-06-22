@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 20, 2022 at 11:45 PM
+-- Generation Time: Jun 21, 2022 at 03:00 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -165,7 +165,8 @@ INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `direccion`, `telefono`, 
 ('jose', 'prueba', 'akjsndjas@asdas.com', 'misiones 1387', '0379440369', 'joseig', '40049563', '$2y$10$9o8cgHHeEe2flGoJhXr32OPK6BulhJ/o/YsfMlq162O7APFPKrZBC', 36, 0, 1),
 ('admin', 'admin', 'admin@admin.com', 'admin admin', '0379440369', 'admin', '54548948', '$2y$10$LXJseYvhxsA//7.J48vvNOLi.8WQ6AoxmJCI8bxLqh8WSzAoT7Bcq', 37, 1, 1),
 ('Gonzalo', 'cattaneo', 'sudria@gmail.com', 'misiones 1387', '0379440369', 'bimbi', '54645214', '$2y$10$PnmaymDk1x4.sT4dtNQFiOXofeM1kdgLPx2wh8Ft15uTZNY91Wnbm', 38, 0, 0),
-('jose', 'cattaneo', 'asdasd@gmail.com', 'asdasd asdasd', '0379440369', 'asdasdasd', '40049569', '$2y$10$zz53Ba5xHYL0w/hpitD8Fergf8BDBVeLah36m37FJbj6rdCV2lfma', 39, 0, 1);
+('jose', 'cattaneo', 'asdasd@gmail.com', 'asdasd asdasd', '0379440369', 'asdasdasd', '40049569', '$2y$10$zz53Ba5xHYL0w/hpitD8Fergf8BDBVeLah36m37FJbj6rdCV2lfma', 39, 0, 1),
+('Usuario', 'Usuario', 'Usuario@gmail.com', 'Usuario Usuario', '1234567891', 'usuario', '12345678', '$2y$10$4lRTk3EMftDEaiHLZFF1We58239LCwp1INSrMVHGkfGpcBq9aFJoG', 41, 0, 1);
 
 --
 -- Indexes for dumped tables
@@ -229,7 +230,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- Constraints for dumped tables

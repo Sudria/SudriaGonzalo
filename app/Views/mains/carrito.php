@@ -1,7 +1,7 @@
 <?php $total = 0;?>
 <section class="h-100 h-custom">
     <div class="container h-100 mt-5 fondo-gris py-5">
-        <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="row d-flex h-100">
             <div class="col">
                 <?php if (session('rol') == 0 && session('rol')!=null) {?>
                 <div class="table-responsive">
@@ -29,17 +29,15 @@
                                     </div>
                                 </th>
                                 <td>
-                                    <div class="d-flex flex-row">
-                                        <input id="form1" min="1" name="quantity"
-                                            value="<?= session('carrito')[$producto->id]?>" type="number"
-                                            class="form-control form-control-sm" style="width: 60px;" />
+                                    <div class="flex-column ms-4 ">
+                                        <p class="my-4 fw-bold"> <?= session('carrito')[$producto->id]?></p>
                                     </div>
                                 </td>
                                 <td>
-                                    <p class="mb-0 fw-bold">$<?=$producto->precio?></p>
+                                    <p class="my-4 fw-bold">$<?=$producto->precio?></p>
                                 </td>
                                 <td>
-                                    <p class="mb-0 fw-bold">
+                                    <p class="my-4 fw-bold">
                                         $<?= session('carrito')[$producto->id]* $producto->precio;?>
                                         <?php $total = $total + session('carrito')[$producto->id]* $producto->precio;?>
                                     </p>
@@ -47,7 +45,7 @@
                                 </td>
                                 <td>
                                     <a href="<?=base_url() . "/eliminar_pcarrito/" . $producto->id;?>"
-                                        class="btn btn-danger"> <i class="fa-solid fa-trash-can"></i></a>
+                                        class="btn btn-danger my-3"> <i class="fa-solid fa-trash-can"></i></a>
                                 </td>
                             </tr>
                         </tbody>
@@ -153,10 +151,6 @@
                                         <span> $<?=$total - $total * 0.1;?></span>
                                     </div>
                                 </a>
-                                <button type="button" class="m-1 btn btn-warning btn-block ">
-                                    <div class="d-flex justify-content-between">
-                                        <span>Actualizar</span>
-                                    </div>
                                 </button>
                                 <a href="<?=base_url() . "/vaciar_carrito";?>" class="m-1 btn btn-danger btn-block ">
                                     <div class="d-flex justify-content-between">
@@ -176,6 +170,6 @@
     <h2 class="text-center pt-5 mb-5 "> ERROR 403</h2>
     <h4 class="text-center pb-5">No tienes permiso para acceder a esta pagina. <br> Porfavor vuelve al
         <a href="<?php echo base_url();?>" class="text-center">Inicio.</a>
-        <br> O <a href="<?= base_url()."/ingresar";?>" >inicia sesion.</a>
+        <br> O <a href="<?= base_url()."/ingresar";?>">inicia sesion.</a>
     </h4>
     <?php } ?>

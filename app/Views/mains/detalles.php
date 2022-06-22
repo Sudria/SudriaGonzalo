@@ -22,11 +22,13 @@
                      
                     </div>
                     <div class="buttons d-flex flex-row mt-5 gap-3 texto-base">
-                        <form method="POST" action="<?php echo base_url() . "/agregar_pcarrito/".$datos->id; ?>">
+                    <?php if (session('rol')== 0 && session('rol')!=null){?>
+                    <form method="POST" action="<?php echo base_url() . "/agregar_pcarrito/".$datos->id; ?>">
                             Cantidad: <input id="cantidad" name="cantidad" class="text-center" type="number"
                                 style="width:30%" min="1" max="<?php echo $datos->stock ?>" value="1">
                             <button type="submit" class="btn boton-marron">Agregar</button>
                         </form>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
